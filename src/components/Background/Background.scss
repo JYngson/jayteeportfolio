@@ -1,0 +1,10 @@
+.Background {
+  background-color: black;
+  height: 100vh;
+  &__image {
+    height: 80vh;
+    width: 65vw;
+    margin-top: 20vh;
+    margin-left: 35vw;
+  }
+}
