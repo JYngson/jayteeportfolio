@@ -1,34 +1,39 @@
 import React, { useState } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
+import Differentiate from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import "./Navbar.scss";
 
-export default function Navbar() {
-  let [sidebar, setSidebar] = useState(true);
-  let [sublist, setSublist] = useState(true);
-  const [isShown, setIsShown] = useState(false);
+export default function Navbar({ setBackground, setVisible }) {
+  const [sidebar, setSidebar] = useState(true);
+  const [sublist, setSublist] = useState(true);
+  const [invert, setInvert] = useState("invert(0)");
 
+  // Hover effect for shoots
+  const onHover = (image, visible, filter) => {
+    setBackground(image);
+    setVisible(visible);
+    setInvert(filter);
+  };
+
+  //Toggles Portfolio Sidebar
   const portfolioHandle = () => {
     setSidebar(true);
-    console.log(sidebar);
   };
-
+  //Toggles About Sidebar
   const aboutHandle = () => {
     setSidebar(false);
-    console.log(sidebar);
   };
-
+  //Toggles Fashion Sub-bar
   const fashionHandle = () => {
     setSublist(true);
-    console.log(sublist);
   };
-
+  //Toggles Jewelry Sub-bar
   const jewelryHandle = () => {
     setSublist(false);
-    console.log(sublist);
   };
 
   return (
-    <div className="Navbar">
+    <div className="Navbar" style={{ filter: `${invert}` }}>
       <div className="Navbar__sidebar">
         <div className="Navbar__mainNav">
           <h2 className="Navbar__links" onClick={portfolioHandle}>
@@ -56,20 +61,24 @@ export default function Navbar() {
                     <ul>
                       <li
                         className="Navbar__shoot"
-                        onMouseEnter={() => setIsShown(true)}
-                        onMouseLeave={() => setIsShown(false)}
+                        onMouseEnter={() =>
+                          onHover(`${Differentiate}`, "Hidden", "invert(1)")
+                        }
+                        onMouseLeave={() =>
+                          onHover("Black", "Visible", "invert(0)")
+                        }
                       >
-                        01__21__DIFFERENTIATE
+                        01_21_VULKAN//17:23
                       </li>
-                      <li
+                      {/* <li
                         className="Navbar__shoot"
-                        onMouseEnter={() => setIsShown(true)}
-                        onMouseLeave={() => setIsShown(false)}
+                        onMouseEnter={() => onHover("Blue", "Hidden")}
+                        onMouseLeave={() => onHover("Black", "Visible")}
                       >
                         12__20__ELEMENTS
                       </li>
                       <li className="Navbar__shoot">MM__DD__Shoot</li>
-                      <li className="Navbar__shoot">MM__DD__Shoot</li>
+                      <li className="Navbar__shoot">MM__DD__Shoot</li> */}
                     </ul>
                   </div>
                 </div>

@@ -1,6 +1,8 @@
 .Background {
-  background-color: black;
   height: 100vh;
+  background-color: black;
+  opacity: 1;
+
   &__image {
     height: 80vh;
     width: 65vw;

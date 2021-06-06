@@ -36,8 +36,9 @@
   &__portfolioShoots {
     height: 100%;
     width: 100%;
-    color: black;
-    background-color: white;
+    color: white;
+    // background-color: white;
+    // filter: invert(1);
   }
   &__shootSublist {
     display: flex;
