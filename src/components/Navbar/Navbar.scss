@@ -13,7 +13,7 @@
   justify-content: space-between;
   width: 100vw;
   height: 20vh;
-  color: white;
+  color: grey;
   &__sidebar {
     display: flex;
     width: 35%;
@@ -45,7 +45,6 @@
   &__portfolioShoots {
     height: 100%;
     width: 100%;
-    color: white;
   }
   &__shootSublist {
     display: flex;
@@ -63,8 +62,10 @@
   }
   &__shoot {
     list-style-type: none;
+    text-decoration: none;
     margin: 5% 0;
     cursor: pointer;
+    color: grey;
   }
   &__about {
     margin: 5% 0;
@@ -74,6 +75,11 @@
     justify-content: center;
     align-items: center;
     width: 30%;
+  }
+  &__header {
+    text-decoration: none;
+    color: grey;
+    font-size: 2.5rem;
   }
   &__contact {
     display: flex;

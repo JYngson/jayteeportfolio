@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import Differentiate from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import "./Navbar.scss";
 
@@ -59,7 +60,8 @@ export default function Navbar({ setBackground, setVisible }) {
                 <div>
                   <div className="Navbar__shootList">
                     <ul>
-                      <li
+                      <Link
+                        to="/Vulkan"
                         className="Navbar__shoot"
                         onMouseEnter={() =>
                           onHover(`${Differentiate}`, "invert(1)")
@@ -67,7 +69,7 @@ export default function Navbar({ setBackground, setVisible }) {
                         onMouseLeave={() => onHover("Black")}
                       >
                         01_21_VULKAN//17:23
-                      </li>
+                      </Link>
                     </ul>
                   </div>
                 </div>
@@ -84,7 +86,9 @@ export default function Navbar({ setBackground, setVisible }) {
       </div>
 
       <div className="Navbar__title">
-        <h1 className="Navbar__header">Sleepy</h1>
+        <Link to="/" className="Navbar__header">
+          Sleepy
+        </Link>
       </div>
 
       <div className="Navbar__contact">
