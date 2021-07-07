@@ -9,19 +9,20 @@ export default function Navbar({ setBackground, setVisible }) {
   const [invert, setInvert] = useState("invert(0)");
 
   // Hover effect for shoots
-  const onHover = (image, visible, filter) => {
+  const onHover = (image, filter) => {
     setBackground(image);
-    setVisible(visible);
     setInvert(filter);
   };
 
   //Toggles Portfolio Sidebar
   const portfolioHandle = () => {
     setSidebar(true);
+    setVisible("Hidden");
   };
   //Toggles About Sidebar
   const aboutHandle = () => {
     setSidebar(false);
+    setVisible("Visible");
   };
   //Toggles Fashion Sub-bar
   const fashionHandle = () => {
@@ -33,12 +34,11 @@ export default function Navbar({ setBackground, setVisible }) {
   };
 
   return (
-    <div className="Navbar" style={{ filter: `${invert}` }}>
+    <div className="Navbar" style={{ filter: invert }}>
       <div className="Navbar__sidebar">
         <div className="Navbar__mainNav">
           <h2 className="Navbar__links" onClick={portfolioHandle}>
-            {" "}
-            - Portfolio -{" "}
+            - Portfolio -
           </h2>
           <h2 className="Navbar__links" onClick={aboutHandle}>
             About -
@@ -62,23 +62,12 @@ export default function Navbar({ setBackground, setVisible }) {
                       <li
                         className="Navbar__shoot"
                         onMouseEnter={() =>
-                          onHover(`${Differentiate}`, "Hidden", "invert(1)")
+                          onHover(`${Differentiate}`, "invert(1)")
                         }
-                        onMouseLeave={() =>
-                          onHover("Black", "Visible", "invert(0)")
-                        }
+                        onMouseLeave={() => onHover("Black")}
                       >
                         01_21_VULKAN//17:23
                       </li>
-                      {/* <li
-                        className="Navbar__shoot"
-                        onMouseEnter={() => onHover("Blue", "Hidden")}
-                        onMouseLeave={() => onHover("Black", "Visible")}
-                      >
-                        12__20__ELEMENTS
-                      </li>
-                      <li className="Navbar__shoot">MM__DD__Shoot</li>
-                      <li className="Navbar__shoot">MM__DD__Shoot</li> */}
                     </ul>
                   </div>
                 </div>
@@ -93,9 +82,11 @@ export default function Navbar({ setBackground, setVisible }) {
           )}
         </div>
       </div>
+
       <div className="Navbar__title">
         <h1 className="Navbar__header">Sleepy</h1>
       </div>
+
       <div className="Navbar__contact">
         <div className="Navbar__contactIcons">
           <FiInstagram size={30} />

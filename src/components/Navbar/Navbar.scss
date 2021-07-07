@@ -1,3 +1,12 @@
+@keyframes invert {
+  0% {
+    filter: invert(0);
+  }
+  100% {
+    filter: invert(1);
+  }
+}
+
 .Navbar {
   position: absolute;
   display: flex;
@@ -37,8 +46,6 @@
     height: 100%;
     width: 100%;
     color: white;
-    // background-color: white;
-    // filter: invert(1);
   }
   &__shootSublist {
     display: flex;
@@ -57,6 +64,7 @@
   &__shoot {
     list-style-type: none;
     margin: 5% 0;
+    cursor: pointer;
   }
   &__about {
     margin: 5% 0;
@@ -78,4 +86,8 @@
     justify-content: space-around;
     align-items: center;
   }
+}
+
+.Navbar > li:hover {
+  animation: invert 1s ease-in;
 }

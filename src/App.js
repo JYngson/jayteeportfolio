@@ -1,15 +1,17 @@
-import React, { useState } from "react";
-import { Navbar, Background } from "./components";
+import React from "react";
+import { Home, Vulkan } from "./components";
 import "./App.scss";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function App() {
-  const [background, setBackground] = useState("Black");
-  const [visible, setVisible] = useState("Hidden");
-
   return (
-    <div className="App">
-      <Navbar setBackground={setBackground} setVisible={setVisible} />
-      <Background background={background} visible={visible} />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/" component={Home}></Route>
+          <Router path="Vulkan" component={Vulkan}></Router>
+        </Switch>
+      </div>
+    </Router>
   );
 }
