@@ -1,6 +1,7 @@
 .Vulkan {
-  height: 100vh;
-  &__topMargin {
-    height: 20vh;
+  height: 200vh;
+  &__lookbook {
+    display: flex;
+    justify-content: center;
   }
 }
