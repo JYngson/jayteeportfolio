@@ -15,16 +15,6 @@ export default function Navbar({ setBackground, setVisible }) {
     setInvert(filter);
   };
 
-  //Toggles Portfolio Sidebar
-  const portfolioHandle = () => {
-    setSidebar(true);
-    setVisible("Hidden");
-  };
-  //Toggles About Sidebar
-  const aboutHandle = () => {
-    setSidebar(false);
-    setVisible("Visible");
-  };
   //Toggles Fashion Sub-bar
   const fashionHandle = () => {
     setSublist(true);
@@ -38,9 +28,7 @@ export default function Navbar({ setBackground, setVisible }) {
     <div className="Navbar" style={{ filter: invert }}>
       <div className="Navbar__sidebar">
         <div className="Navbar__mainNav">
-          <h2 className="Navbar__links" onClick={portfolioHandle}>
-            - Portfolio -
-          </h2>
+          <h2 className="Navbar__links">- Portfolio -</h2>
           <Link to="/about" className="Navbar__links">
             About -
           </Link>

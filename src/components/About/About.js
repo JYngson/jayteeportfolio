@@ -4,9 +4,7 @@ import "./About.scss";
 export default function About() {
   return (
     <div className="About">
-      <div>
-        <h2>Hihi</h2>
-      </div>
+      <h2>About Page</h2>
     </div>
   );
 }
