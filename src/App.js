@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Background, Navbar, Vulkan } from "./components";
+import { Background, Navbar, Vulkan, About } from "./components";
 import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { data } from "./data/VulkanImageData";
@@ -22,9 +22,11 @@ export default function App() {
             )}
           ></Route>
           <Route
-            to="/Vulkan"
+            exact
+            path="/Vulkan"
             render={(galleryData) => <Vulkan galleryData={galleryData} />}
           />
+          <Route component={About} exact path="/about" />
         </Switch>
       </div>
     </Router>

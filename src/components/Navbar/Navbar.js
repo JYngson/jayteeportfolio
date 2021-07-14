@@ -41,47 +41,41 @@ export default function Navbar({ setBackground, setVisible }) {
           <h2 className="Navbar__links" onClick={portfolioHandle}>
             - Portfolio -
           </h2>
-          <h2 className="Navbar__links" onClick={aboutHandle}>
+          <Link to="/about" className="Navbar__links">
             About -
-          </h2>
+          </Link>
         </div>
         <div className="Navbar__portfolio">
-          {sidebar ? (
-            <div className="Navbar__portfolioShoots">
-              <div className="Navbar__shootSublist">
-                <h3 className="Navbar__shootSubheader" onClick={fashionHandle}>
-                  Fashion
-                </h3>
-                <h3 className="Navbar__shootSubheader" onClick={jewelryHandle}>
-                  Jewelry
-                </h3>
-              </div>
-              {sublist ? (
-                <div>
-                  <div className="Navbar__shootList">
-                    <ul>
-                      <Link
-                        to="/Vulkan"
-                        className="Navbar__shoot"
-                        onMouseEnter={() =>
-                          onHover(`${Differentiate}`, "invert(1)")
-                        }
-                        onMouseLeave={() => onHover("Black")}
-                      >
-                        01_21_VULKAN//17:23
-                      </Link>
-                    </ul>
-                  </div>
+          <div className="Navbar__portfolioShoots">
+            <div className="Navbar__shootSublist">
+              <h3 className="Navbar__shootSubheader" onClick={fashionHandle}>
+                Fashion
+              </h3>
+              <h3 className="Navbar__shootSubheader" onClick={jewelryHandle}>
+                Jewelry
+              </h3>
+            </div>
+            {sublist ? (
+              <div>
+                <div className="Navbar__shootList">
+                  <ul>
+                    <Link
+                      to="/Vulkan"
+                      className="Navbar__shoot"
+                      onMouseEnter={() =>
+                        onHover(`${Differentiate}`, "invert(1)")
+                      }
+                      onMouseLeave={() => onHover("Black")}
+                    >
+                      01_21_VULKAN//17:23
+                    </Link>
+                  </ul>
                 </div>
-              ) : (
-                <h2>Jewelery</h2>
-              )}
-            </div>
-          ) : (
-            <div className="Navbar__about">
-              <h2>About Sleepy</h2>
-            </div>
-          )}
+              </div>
+            ) : (
+              <h2>Jewelry</h2>
+            )}
+          </div>
         </div>
       </div>
 

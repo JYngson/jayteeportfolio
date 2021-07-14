@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Vulkan.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { SRLWrapper } from "simple-react-lightbox";
+import Gallery from "react-photo-gallery";
 import { Carousel } from "react-responsive-carousel";
 import { data } from "../../data/VulkanImageData.js";
 import background1 from "../../assets/images/Vulkan/IMG_9486.jpg";
@@ -9,7 +10,6 @@ import background2 from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import background3 from "../../assets/images/SevenTeenTwentyThree/IMG_2899.JPG";
 
 export default function Vulkan() {
-  console.log(data);
   return (
     <div className="Vulkan">
       <Carousel
@@ -30,22 +30,8 @@ export default function Vulkan() {
       </Carousel>
       <div className="Vulkan__lookbook">
         <h1> Lookbook </h1>
-
         <SRLWrapper>
-          {data.map((image) => {
-            return (
-              <a href={image.image}>
-                <img
-                  src={image.image}
-                  alt={image.name}
-                  width={"25%"}
-                  height={"25%"}
-                  srl_gallery_image="true"
-                />
-              </a>
-            );
-          })}
-          ;
+          <Gallery photos={data} />
         </SRLWrapper>
       </div>
     </div>
