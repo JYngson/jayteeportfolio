@@ -13,6 +13,7 @@ export default function Background({ background, visible }) {
     >
       <img
         className="Background__image"
+        alt="Jaytee Background"
         src={Jaytee}
         style={{ visibility: `${visible}` }}
       />

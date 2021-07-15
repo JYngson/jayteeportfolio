@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Vulkan.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { SRLWrapper } from "simple-react-lightbox";

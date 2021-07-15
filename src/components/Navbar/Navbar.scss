@@ -1,9 +1,18 @@
-@keyframes invert {
+@keyframes color {
   0% {
-    filter: invert(0);
+    color: grey;
   }
   100% {
-    filter: invert(1);
+    color: red;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -15,6 +24,8 @@
   height: 20vh;
   color: grey;
   z-index: 1;
+  animation: fadeIn 0.5s ease-in;
+  animation-fill-mode: forwards;
   &__sidebar {
     display: flex;
     width: 35%;
@@ -24,6 +35,7 @@
   &__mainNav {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 20%;
     height: 100%;
     writing-mode: vertical-rl;
@@ -32,10 +44,12 @@
   &__links {
     cursor: pointer;
     font-size: 1.2rem;
+    text-align: center;
     padding-bottom: 3%;
     margin: 0;
     text-decoration: none;
     color: grey;
+    font-weight: bold;
   }
   &__portfolio {
     display: flex;
@@ -56,9 +70,6 @@
   }
   &__shootSubheader {
     cursor: pointer;
-    &:hover {
-      text-decoration: underline;
-    }
   }
   &__shootList {
     height: 90%;
@@ -83,6 +94,10 @@
     text-decoration: none;
     color: grey;
     font-size: 2.5rem;
+    &:hover {
+      animation: color 0.5s ease-in;
+      animation-fill-mode: forwards;
+    }
   }
   &__contact {
     display: flex;
@@ -95,8 +110,7 @@
     justify-content: space-around;
     align-items: center;
   }
-}
-
-.Navbar > li:hover {
-  animation: invert 1s ease-in;
+  &__contactLink {
+    color: white;
+  }
 }
