@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Background, Navbar, Vulkan, About } from "./components";
 import "./App.scss";
+import { Background, Navbar, Vulkan, About } from "./components";
+import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { data } from "./data/VulkanImageData";
 
@@ -13,21 +14,23 @@ export default function App() {
     <Router>
       <div className="App">
         <Navbar setBackground={setBackground} setVisible={setVisible} />
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={() => (
-              <Background background={background} visible={visible} />
-            )}
-          ></Route>
-          <Route
-            exact
-            path="/Vulkan"
-            render={(galleryData) => <Vulkan galleryData={galleryData} />}
-          />
-          <Route component={About} exact path="/about" />
-        </Switch>
+        <AnimatePresence>
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() => (
+                <Background background={background} visible={visible} />
+              )}
+            ></Route>
+            <Route
+              exact
+              path="/Vulkan"
+              render={(galleryData) => <Vulkan galleryData={galleryData} />}
+            />
+            <Route component={About} exact path="/about" />
+          </Switch>
+        </AnimatePresence>
       </div>
     </Router>
   );

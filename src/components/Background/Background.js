@@ -1,10 +1,24 @@
 import React from "react";
 import "./Background.scss";
 import Jaytee from "../../assets/Jaytee.jpg";
+import { motion } from "framer-motion";
+
+const transition = {
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
 
 export default function Background({ background, visible }) {
   return (
-    <div
+    <motion.div
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={transition}
       className="Background"
       style={{
         backgroundImage: `url(${background})`,
@@ -17,6 +31,6 @@ export default function Background({ background, visible }) {
         src={Jaytee}
         style={{ visibility: `${visible}` }}
       />
-    </div>
+    </motion.div>
   );
 }

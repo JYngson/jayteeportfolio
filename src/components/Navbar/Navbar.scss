@@ -1,21 +1,3 @@
-@keyframes color {
-  0% {
-    color: grey;
-  }
-  100% {
-    color: red;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .Navbar {
   position: absolute;
   display: flex;
@@ -24,8 +6,6 @@
   height: 20vh;
   color: grey;
   z-index: 1;
-  animation: fadeIn 0.5s ease-in;
-  animation-fill-mode: forwards;
   &__sidebar {
     display: flex;
     width: 35%;
@@ -58,6 +38,7 @@
     margin: 0;
     width: 80%;
     height: 100%;
+    animation: fadeIn 0.5s ease-in;
   }
   &__portfolioShoots {
     height: 100%;
@@ -80,6 +61,10 @@
     margin: 5% 0;
     cursor: pointer;
     color: grey;
+    &:hover {
+      animation: color 1s ease-in;
+      animation-fill-mode: forwards;
+    }
   }
   &__about {
     margin: 5% 0;
@@ -112,5 +97,22 @@
   }
   &__contactLink {
     color: white;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes color {
+  0% {
+    color: grey;
+  }
+  100% {
+    color: red;
   }
 }

@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import Differentiate from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import "./Navbar.scss";
 
-export default function Navbar({ setBackground, setVisible }) {
+export default function Navbar({ setBackground }) {
   const [sublist, setSublist] = useState(true);
   const [portfolio, setPortfolio] = useState(true);
 
   // Hover effect for shoots
-  const onHover = (image, filter) => {
+  const onHover = (image) => {
     setBackground(image);
   };
 
@@ -70,7 +70,7 @@ export default function Navbar({ setBackground, setVisible }) {
             </div>
           </div>
         ) : (
-          <div></div>
+          <div />
         )}
       </div>
 

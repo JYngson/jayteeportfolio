@@ -1,6 +1,7 @@
 import React from "react";
 import "./Vulkan.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { motion } from "framer-motion";
 import { SRLWrapper } from "simple-react-lightbox";
 import Gallery from "react-photo-gallery";
 import { Carousel } from "react-responsive-carousel";
@@ -9,9 +10,34 @@ import background1 from "../../assets/images/Vulkan/IMG_9486.jpg";
 import background2 from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import background3 from "../../assets/images/SevenTeenTwentyThree/IMG_2899.JPG";
 
+const variants = {
+  initial: {
+    transform: "scale(1.25, 1.25)",
+    filter: "invert(1)",
+  },
+  in: {
+    transform: "scale(1, 1)",
+    filter: "invert(0)",
+  },
+  out: {
+    opacity: 0,
+  },
+};
+
+const transition = {
+  duration: 1,
+};
+
 export default function Vulkan() {
   return (
-    <div className="Vulkan">
+    <motion.div
+      className="Vulkan"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={variants}
+      transition={transition}
+    >
       <Carousel
         infiniteLoop={true}
         autoPlay={true}
@@ -34,6 +60,6 @@ export default function Vulkan() {
           <Gallery photos={data} />
         </SRLWrapper>
       </div>
-    </div>
+    </motion.div>
   );
 }
