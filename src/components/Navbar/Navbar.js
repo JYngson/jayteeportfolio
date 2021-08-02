@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { FcMenu } from "react-icons/fc";
 import Differentiate from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import "./Navbar.scss";
 
 export default function Navbar({ setBackground }) {
   const [sublist, setSublist] = useState(true);
-  const [portfolio, setPortfolio] = useState(true);
+  const [mobileMenu, setMobileMenu] = useState("flex");
+  const [portfolio, setPortfolio] = useState(false);
 
-  // Hover effect for shoots
+  //Hover effect for shoots
   const onHover = (image) => {
     setBackground(image);
   };
@@ -16,6 +18,11 @@ export default function Navbar({ setBackground }) {
   //Toggles Portfolio list on/off
   const portfolioHandle = () => {
     setPortfolio(!portfolio);
+  };
+
+  //Toggles mobile menu display
+  const mobileMenuHandle = () => {
+    mobileMenu === "none" ? setMobileMenu("flex") : setMobileMenu("none");
   };
 
   //Toggles Fashion Sub-bar
@@ -30,14 +37,18 @@ export default function Navbar({ setBackground }) {
   return (
     <div className="Navbar">
       <div className="Navbar__sidebar">
-        <div className="Navbar__mainNav">
-          <h2 className="Navbar__links" onClick={portfolioHandle}>
-            - Portfolio -
-          </h2>
-          <Link to="/about" className="Navbar__links">
-            About -
-          </Link>
+        <FcMenu className="Navbar__sideIcon" onClick={mobileMenuHandle} />
+        <div className="Navbar__mainNav" style={{ display: mobileMenu }}>
+          <div className="Navbar__mobileNav">
+            <h2 className="Navbar__links" onClick={portfolioHandle}>
+              Portfolio
+            </h2>
+            <Link to="/about" className="Navbar__links">
+              About
+            </Link>
+          </div>
         </div>
+
         {portfolio ? (
           <div className="Navbar__portfolio">
             <div className="Navbar__portfolioShoots">
