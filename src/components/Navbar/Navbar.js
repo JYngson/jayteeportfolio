@@ -23,6 +23,7 @@ export default function Navbar({ setBackground }) {
   //Toggles mobile menu display
   const mobileMenuHandle = () => {
     mobileMenu === "none" ? setMobileMenu("flex") : setMobileMenu("none");
+    setPortfolio(false);
   };
 
   //Toggles Fashion Sub-bar
@@ -43,12 +44,17 @@ export default function Navbar({ setBackground }) {
         <div className="Navbar__mobileNav">
           <div className="Navbar__mainNav" style={{ display: mobileMenu }}>
             <div className="Navbar__mobileLinks">
-              <h2 className="Navbar__links" onClick={portfolioHandle}>
-                Portfolio
-              </h2>
-              <Link to="/about" className="Navbar__links">
-                About
-              </Link>
+              <div className="Navbar__portfolioLink">
+                <h2 className="Navbar__links" onClick={portfolioHandle}>
+                  Portfolio
+                </h2>
+              </div>
+
+              <div className="Navbar__about">
+                <Link to="/about" className="Navbar__links">
+                  About
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -70,19 +76,15 @@ export default function Navbar({ setBackground }) {
                   </h3>
                 </div>
                 {sublist ? (
-                  <div>
-                    <div className="Navbar__shootList">
-                      <ul>
-                        <Link
-                          to="/Vulkan"
-                          className="Navbar__shoot"
-                          onMouseEnter={() => onHover(`${Differentiate}`)}
-                          onMouseLeave={() => onHover("Black")}
-                        >
-                          01_21_VULKAN//17:23
-                        </Link>
-                      </ul>
-                    </div>
+                  <div className="Navbar__shootList">
+                    <Link
+                      to="/Vulkan"
+                      className="Navbar__shoot"
+                      onMouseEnter={() => onHover(`${Differentiate}`)}
+                      onMouseLeave={() => onHover("Black")}
+                    >
+                      01_21_VULKAN//17:23
+                    </Link>
                   </div>
                 ) : (
                   <h2>Jewelry</h2>
