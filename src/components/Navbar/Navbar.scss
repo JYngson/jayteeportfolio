@@ -40,6 +40,8 @@
     }
   }
   &__mobileNav {
+    display: flex;
+    width: 100%;
     @include mobile {
       display: flex;
       width: 100vw;
@@ -48,10 +50,7 @@
   }
   &__mainNav {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 20%;
-    height: 100%;
     writing-mode: vertical-rl;
     text-orientation: upright;
     @include mobile {
@@ -65,9 +64,14 @@
     }
   }
   &__mobileLinks {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
     @include mobile {
       display: flex;
       align-items: center;
+      justify-content: flex-start;
       flex-direction: column;
       width: 100%;
       height: 100%;
@@ -129,6 +133,8 @@
     margin: 0;
   }
   &__shootList {
+    display: flex;
+    justify-content: center;
     height: 90%;
     @include mobile {
       display: flex;
