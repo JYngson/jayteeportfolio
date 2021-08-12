@@ -2,19 +2,31 @@
 
 .About {
   display: flex;
-  flex-direction: row-reverse;
   height: 100vh;
   background-image: url(../../assets/images/Sleepy/IMG_2289.JPG);
   background-size: cover;
+  justify-content: center;
+  @include mobile {
+    height: 100%;
+  }
   &__container {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 70vw;
+    @include mobile {
+      padding-top: 20vh;
+    }
+  }
+  &__quote {
+    color: white;
+    font-style: italic;
+    font-size: 1.2rem;
   }
   &__bio {
     line-height: 1.2em;
-    width: 70%;
+    width: 100%;
     color: white;
   }
 }

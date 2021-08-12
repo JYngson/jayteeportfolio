@@ -69,13 +69,14 @@ export default function Vulkan() {
           className="Vulkan__mobileHero--img2"
           src={mobileBack2}
           alt="Background2"
-        />
+        />{" "}
+        //
         <img
           className="Vulkan__mobileHero--img3"
           src={mobileBack3}
           alt="Background3"
         />
-        {/* <h1 className="Vulkan__mobileHero--header">Vulkan.</h1> */}
+        <h2 className="Vulkan__mobileHero--header">- Vulkan -</h2>
       </div>
 
       <div className="Vulkan__lookbook">

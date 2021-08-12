@@ -29,7 +29,27 @@ export default function About() {
       variants={variants}
     >
       <div className="About__container">
-        <p className="About__bio"></p>
+        <p className="About__quote">
+          “There are so many avenues in my life that I’m exploring - fashion,
+          street dance… even my relationships with people. My art is merely a
+          reflection of those experiences.” -Sleepy
+        </p>
+        <p className="About__bio">
+          Pressured by the community around him to follow traditional
+          professions of engineering and business, Sleepy’s identity as a
+          fashion designer was birthed from a defiance of cultural norms and
+          expectations. Sleepy describes his style as a “juxtaposition” - an
+          exploration on contrasting properties, often between modern designer
+          fashion and classic pieces, bound together by select vintage jewelry.
+          Sleepy’s pieces also explore opposing themes like casual wear and
+          formal wear, together creating a versatile and unique collection of
+          pieces. As of recent, Sleepy’s interests have been focused on the idea
+          of “creation through destruction”, achieved through the medium of Boro
+          Stitching. Never fully knowing what he’ll come up with, Sleepy treads
+          the boundary between chaos and order, trusting that through the chaos
+          of the unknown, he’ll come out with unique designs that push the
+          boundaries of fashion.
+        </p>
       </div>
     </motion.div>
   );
