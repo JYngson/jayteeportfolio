@@ -8,6 +8,8 @@
   justify-content: center;
   @include mobile {
     height: 100%;
+    background-image: url(../../assets/images/Sleepy/IMG_0042.jpg);
+    background-size: cover;
   }
   &__container {
     display: flex;
@@ -28,5 +30,14 @@
     line-height: 1.2em;
     width: 100%;
     color: white;
+    &--juxt {
+      color: yellow;
+    }
+    &--creation {
+      color: red;
+    }
+    &--chaos {
+      color: purple;
+    }
   }
 }

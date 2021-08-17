@@ -38,17 +38,21 @@ export default function About() {
           Pressured by the community around him to follow traditional
           professions of engineering and business, Sleepy’s identity as a
           fashion designer was birthed from a defiance of cultural norms and
-          expectations. Sleepy describes his style as a “juxtaposition” - an
+          expectations. He describes his style as a{" "}
+          <span className="About__bio--juxt">“juxtaposition”</span> - an
           exploration on contrasting properties, often between modern designer
           fashion and classic pieces, bound together by select vintage jewelry.
           Sleepy’s pieces also explore opposing themes like casual wear and
           formal wear, together creating a versatile and unique collection of
-          pieces. As of recent, Sleepy’s interests have been focused on the idea
-          of “creation through destruction”, achieved through the medium of Boro
-          Stitching. Never fully knowing what he’ll come up with, Sleepy treads
-          the boundary between chaos and order, trusting that through the chaos
-          of the unknown, he’ll come out with unique designs that push the
-          boundaries of fashion.
+          pieces. As of recent, his interests have been focused on the idea of{" "}
+          <span className="About__bio--creation">
+            “creation through destruction”
+          </span>
+          , achieved through the medium of Boro Stitching. Never fully knowing
+          what he’ll come up with, Sleepy treads the boundary between{" "}
+          <span className="About__bio--chaos">chaos and order</span>, trusting
+          that through the chaos of the unknown, he’ll come out with unique
+          designs that push the boundaries of fashion.
         </p>
       </div>
     </motion.div>

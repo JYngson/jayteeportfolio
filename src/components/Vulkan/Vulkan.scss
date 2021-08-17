@@ -19,7 +19,11 @@
       position: relative;
       display: flex;
       overflow: hidden;
+      padding-top: 10vh;
       height: 80vh;
+      background-image: url("../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG");
+      background-position: center;
+      background-size: cover;
     }
     &--img1 {
       height: 13rem;

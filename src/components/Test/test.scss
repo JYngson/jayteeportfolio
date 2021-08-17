@@ -1,0 +1,94 @@
+@import "../Partials/mixins";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: grey;
+  @include desktop {
+    width: 95%;
+    padding: 0 2.5%;
+  }
+  &__desktopDivide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+      width: 95%;
+      padding: 0 2.5%;
+      flex-direction: row;
+    }
+  }
+  &__navbar {
+    width: 95%;
+    margin: 2vh 0;
+    height: 10vh;
+    background-color: orange;
+  }
+  &__menu {
+    width: 95%;
+    margin: 2vh 0;
+    height: 10vh;
+    background-color: purple;
+    @include desktop {
+      width: 24%;
+      height: 80vh;
+      margin-right: 1%;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+      width: 74%;
+      height: 80vh;
+      margin-left: 1%;
+      background-color: khaki;
+      flex-direction: row-reverse;
+    }
+  }
+  &__text {
+    width: 95%;
+    margin: 2vh 0;
+    @include desktop {
+      width: 48%;
+      height: 95%;
+      margin: 0 1%;
+    }
+  }
+  &__imgBox {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 50vw;
+    @include desktop {
+      flex-direction: column;
+      width: 48%;
+      height: 95%;
+      margin: 0 0% 0 1%;
+    }
+  }
+  &__img1 {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    @include desktop {
+      width: 100%;
+      height: 50%;
+      margin-bottom: 1%;
+    }
+  }
+  &__img2 {
+    display: none;
+    @include desktop {
+      display: flex;
+      width: 100%;
+      height: 50%;
+      margin-top: 1%;
+      background-color: blue;
+    }
+  }
+}

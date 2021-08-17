@@ -69,8 +69,7 @@ export default function Vulkan() {
           className="Vulkan__mobileHero--img2"
           src={mobileBack2}
           alt="Background2"
-        />{" "}
-        //
+        />
         <img
           className="Vulkan__mobileHero--img3"
           src={mobileBack3}
