@@ -11,6 +11,9 @@
     }
   }
   &__mobileHero {
+    @include desktop {
+      display: none;
+    }
     @include tablet {
       display: none;
     }
@@ -42,6 +45,9 @@
     }
     &--header {
       position: absolute;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: grey;
+      font-size: 180%;
     }
   }
   &__lookbook {

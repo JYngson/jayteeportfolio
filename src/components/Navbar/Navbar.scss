@@ -87,6 +87,7 @@
     @include mobile {
       transform: skew(-20deg);
       background-color: grey;
+      border: 1px solid white;
       width: 80%;
     }
   }
@@ -101,7 +102,7 @@
     font-weight: bold;
     @include mobile {
       font-size: 1.3rem;
-      color: red;
+      color: white;
       animation: fadeIn 0.5s ease-in;
       transform: skew(20deg);
     }
@@ -133,10 +134,24 @@
     justify-content: space-evenly;
     align-items: center;
     height: 10%;
+    @include mobile {
+      color: white;
+      animation: fadeIn 0.5s ease-in;
+    }
   }
   &__shootSubheader {
     cursor: pointer;
     margin: 0;
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      border-radius: 8px;
+      background-color: grey;
+      width: 45%;
+      height: 100%;
+    }
   }
   &__shootList {
     display: flex;
@@ -144,8 +159,11 @@
     height: 90%;
     @include mobile {
       display: flex;
+      flex-direction: column;
       width: 100%;
-      justify-content: center;
+      height: 75vh;
+      justify-content: flex-start;
+      align-items: center;
     }
   }
   &__shoot {
@@ -154,9 +172,19 @@
     margin: 5% 0;
     cursor: pointer;
     color: grey;
+    height: 1em;
     &:hover {
       animation: color 1s ease-in;
       animation-fill-mode: forwards;
+    }
+    @include mobile {
+      background-color: grey;
+      width: 90%;
+      text-align: center;
+      height: 1em;
+      color: white;
+      border: 1px solid white;
+      border-radius: 3px;
     }
   }
   &__about {
@@ -170,6 +198,7 @@
       animation: fadeIn 0.5s ease-in;
       transform: skew(-20deg);
       background-color: grey;
+      border: 1px solid white;
     }
   }
   &__title {

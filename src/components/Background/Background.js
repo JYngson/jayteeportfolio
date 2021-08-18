@@ -1,6 +1,6 @@
 import React from "react";
 import "./Background.scss";
-import Jaytee from "../../assets/Jaytee.jpg";
+// import Jaytee from "../../assets/Jaytee.jpg";
 import { motion } from "framer-motion";
 
 const transition = {
@@ -25,12 +25,12 @@ export default function Background({ background, visible }) {
         backgroundSize: "cover",
       }}
     >
-      <img
+      {/* <img
         className="Background__image"
         alt="Jaytee Background"
         src={Jaytee}
         style={{ visibility: `${visible}` }}
-      />
+      /> */}
     </motion.div>
   );
 }
