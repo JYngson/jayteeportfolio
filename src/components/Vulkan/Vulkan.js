@@ -75,11 +75,10 @@ export default function Vulkan() {
           src={mobileBack3}
           alt="Background3"
         />
-        <h2 className="Vulkan__mobileHero--header">- Vulkan -</h2>
       </div>
 
       <div className="Vulkan__lookbook">
-        <h1> Lookbook </h1>
+        <h1>Vulkan Lookbook</h1>
         <SRLWrapper>
           <Gallery photos={data} />
         </SRLWrapper>

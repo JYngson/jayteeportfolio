@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { FcMenu } from "react-icons/fc";
 import Differentiate from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import "./Navbar.scss";
+import { slide as Menu } from "react-burger-menu";
+import icon from "../../assets/icons/sleepy.png";
 
 export default function Navbar({ setBackground }) {
   const [sublist, setSublist] = useState(true);
@@ -38,63 +40,66 @@ export default function Navbar({ setBackground }) {
   return (
     <div className="Navbar">
       <div className="Navbar__sidebar">
-        <div className="Navbar__iconBox" onClick={mobileMenuHandle}>
-          <FcMenu className="Navbar__sideIcon" />
-        </div>
-        <div className="Navbar__mobileNav">
-          <div className="Navbar__mainNav" style={{ display: mobileMenu }}>
-            <div className="Navbar__mobileLinks">
-              <div className="Navbar__portfolioLink">
-                <h2 className="Navbar__links" onClick={portfolioHandle}>
-                  Portfolio
-                </h2>
-              </div>
-
-              <div className="Navbar__about">
-                <Link to="/about" className="Navbar__links">
-                  About
-                </Link>
-              </div>
-            </div>
+        <Menu
+          className="Navbar__mobileMenu"
+          customBurgerIcon={<img src={icon} alt="menuIcon" />}
+        >
+          <a id="home" className="Navbar__menu-item" href="/">
+            Home
+          </a>
+          <a id="about" className="Navbar__menu-item" href="/about">
+            About
+          </a>
+          <h3 className="Navbar__menu-item--header">---Fashion---</h3>
+          <a id="vulkan" className="Navbar__menu-item--shoot" href="/Vulkan">
+            - Vulkan
+          </a>
+          <h3 className="Navbar__menu-item--header">---Jewelry---</h3>
+        </Menu>
+        <div className="Navbar__mainNav">
+          <div className="Navbar__portfolioLink">
+            <h2 className="Navbar__links" onClick={portfolioHandle}>
+              Portfolio
+            </h2>
           </div>
 
-          {portfolio ? (
-            <div className="Navbar__portfolio">
-              <div className="Navbar__portfolioShoots">
-                <div className="Navbar__shootSublist">
-                  <h3
-                    className="Navbar__shootSubheader"
-                    onClick={fashionHandle}
-                  >
-                    Fashion
-                  </h3>
-                  <h3
-                    className="Navbar__shootSubheader"
-                    onClick={jewelryHandle}
-                  >
-                    Jewelry
-                  </h3>
-                </div>
-                {sublist ? (
-                  <div className="Navbar__shootList">
-                    <Link
-                      to="/Vulkan"
-                      className="Navbar__shoot"
-                      onMouseEnter={() => onHover(`${Differentiate}`)}
-                      onMouseLeave={() => onHover("Black")}
-                    >
-                      01_21_VULKAN//17:23
-                    </Link>
-                  </div>
-                ) : (
-                  <h2>Jewelry</h2>
-                )}
-              </div>
-            </div>
-          ) : (
-            <div />
-          )}
+          <div className="Navbar__about">
+            <Link to="/about" className="Navbar__links">
+              About
+            </Link>
+          </div>
         </div>
+
+        {portfolio ? (
+          <div className="Navbar__portfolio">
+            <div className="Navbar__portfolioShoots">
+              <div className="Navbar__shootSublist">
+                <h3 className="Navbar__shootSubheader" onClick={fashionHandle}>
+                  Fashion
+                </h3>
+                <h3 className="Navbar__shootSubheader" onClick={jewelryHandle}>
+                  Jewelry
+                </h3>
+              </div>
+              {sublist ? (
+                <div className="Navbar__shootList">
+                  <Link
+                    to="/Vulkan"
+                    className="Navbar__shoot"
+                    onMouseEnter={() => onHover(`${Differentiate}`)}
+                    onMouseLeave={() => onHover("Black")}
+                  >
+                    01_21_VULKAN//17:23
+                  </Link>
+                </div>
+              ) : (
+                <h2>Jewelry</h2>
+              )}
+            </div>
+          </div>
+        ) : (
+          <div />
+        )}
       </div>
 
       <div className="Navbar__title">

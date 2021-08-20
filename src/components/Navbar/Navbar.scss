@@ -24,6 +24,9 @@
     }
   }
   &__iconBox {
+    @include tablet {
+      display: none;
+    }
     @include mobile {
       display: flex;
       justify-content: center;
@@ -39,6 +42,23 @@
       height: 20vh;
     }
   }
+  &__menu-item {
+    font-size: 1.1em;
+    margin: 12px;
+    color: white;
+    text-decoration: none;
+    &--header {
+      font-size: 1.2em;
+      margin: 12px;
+      color: red;
+    }
+    &--shoot {
+      font-size: 1em;
+      margin: 6px;
+      color: white;
+      text-decoration: none;
+    }
+  }
   &__mobileNav {
     display: flex;
     width: 100%;
@@ -50,31 +70,12 @@
   }
   &__mainNav {
     display: flex;
+    justify-content: center;
     width: 20%;
     writing-mode: vertical-rl;
     text-orientation: upright;
     @include mobile {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: column;
-      writing-mode: horizontal-tb;
-      text-orientation: mixed;
-      width: 35%;
-    }
-  }
-  &__mobileLinks {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-    @include mobile {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
+      display: none;
     }
   }
   &__portfolioLink {
@@ -85,10 +86,7 @@
     height: 10%;
     animation: fadeIn 0.5s ease-in;
     @include mobile {
-      transform: skew(-20deg);
-      background-color: grey;
-      border: 1px solid white;
-      width: 80%;
+      display: none;
     }
   }
   &__links {
@@ -100,12 +98,12 @@
     text-decoration: none;
     color: grey;
     font-weight: bold;
-    @include mobile {
-      font-size: 1.3rem;
-      color: white;
-      animation: fadeIn 0.5s ease-in;
-      transform: skew(20deg);
-    }
+    // @include mobile {
+    //   font-size: 1.3rem;
+    //   color: white;
+    //   animation: fadeIn 0.5s ease-in;
+    //   transform: skew(20deg);
+    // }
   }
   &__portfolio {
     display: flex;
@@ -189,16 +187,7 @@
   }
   &__about {
     @include mobile {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 80%;
-      margin: 5% 0;
-      height: 10%;
-      animation: fadeIn 0.5s ease-in;
-      transform: skew(-20deg);
-      background-color: grey;
-      border: 1px solid white;
+      display: none;
     }
   }
   &__title {
@@ -235,6 +224,18 @@
   }
   &__contactLink {
     color: white;
+  }
+}
+
+.bm-burger-button {
+  filter: invert(0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  width: 50%;
+  height: 50%;
+  @include tablet {
+    display: none;
   }
 }
 
