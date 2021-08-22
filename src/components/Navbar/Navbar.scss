@@ -70,8 +70,10 @@
   }
   &__mainNav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     width: 20%;
+    height: 100%;
     writing-mode: vertical-rl;
     text-orientation: upright;
     @include mobile {
@@ -235,6 +237,9 @@
   width: 50%;
   height: 50%;
   @include tablet {
+    display: none;
+  }
+  @include desktop {
     display: none;
   }
 }

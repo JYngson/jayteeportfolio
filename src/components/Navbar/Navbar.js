@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { FcMenu } from "react-icons/fc";
 import Differentiate from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import "./Navbar.scss";
 import { slide as Menu } from "react-burger-menu";
