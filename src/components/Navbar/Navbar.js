@@ -8,7 +8,6 @@ import icon from "../../assets/icons/sleepy.png";
 
 export default function Navbar({ setBackground }) {
   const [sublist, setSublist] = useState(true);
-  const [mobileMenu, setMobileMenu] = useState("flex");
   const [portfolio, setPortfolio] = useState(false);
 
   //Hover effect for shoots
@@ -19,12 +18,6 @@ export default function Navbar({ setBackground }) {
   //Toggles Portfolio list on/off
   const portfolioHandle = () => {
     setPortfolio(!portfolio);
-  };
-
-  //Toggles mobile menu display
-  const mobileMenuHandle = () => {
-    mobileMenu === "none" ? setMobileMenu("flex") : setMobileMenu("none");
-    setPortfolio(false);
   };
 
   //Toggles Fashion Sub-bar
@@ -39,6 +32,7 @@ export default function Navbar({ setBackground }) {
   return (
     <div className="Navbar">
       <div className="Navbar__sidebar">
+        {/* Mobile */}
         <Menu
           className="Navbar__mobileMenu"
           customBurgerIcon={<img src={icon} alt="menuIcon" />}
@@ -55,6 +49,8 @@ export default function Navbar({ setBackground }) {
           </a>
           <h3 className="Navbar__menu-item--header">---Jewelry---</h3>
         </Menu>
+
+        {/* Desktop menu */}
         <div className="Navbar__mainNav">
           <div className="Navbar__portfolioLink">
             <h2 className="Navbar__links" onClick={portfolioHandle}>
@@ -89,6 +85,14 @@ export default function Navbar({ setBackground }) {
                     onMouseLeave={() => onHover("Black")}
                   >
                     01_21_VULKAN//17:23
+                  </Link>
+                  <Link
+                    to="/Reminiscent"
+                    className="Navbar__shoot"
+                    onMouseEnter={() => onHover(`${Differentiate}`)}
+                    onMouseLeave={() => onHover("Black")}
+                  >
+                    02_21_REMINISCENT
                   </Link>
                 </div>
               ) : (

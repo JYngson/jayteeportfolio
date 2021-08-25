@@ -1,17 +1,10 @@
 import React from "react";
-import "./Vulkan.scss";
+import "./Portfolio.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { motion } from "framer-motion";
 import { SRLWrapper } from "simple-react-lightbox";
 import Gallery from "react-photo-gallery";
 import { Carousel } from "react-responsive-carousel";
-import { data } from "../../data/VulkanImageData.js";
-import background1 from "../../assets/images/Vulkan/IMG_9486.jpg";
-import background2 from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
-import background3 from "../../assets/images/SevenTeenTwentyThree/IMG_2899.JPG";
-import mobileBack1 from "../../assets/images/Vulkan/IMG_0061.JPG";
-import mobileBack2 from "../../assets/images/Vulkan/IMG_9186.jpg_new_.jpg";
-import mobileBack3 from "../../assets/images/SevenTeenTwentyThree/s.3.jpg";
 
 const variants = {
   initial: {
@@ -31,10 +24,19 @@ const transition = {
   duration: 1,
 };
 
-export default function Vulkan() {
+export default function Portfolio({
+  galleryData,
+  background1,
+  background2,
+  background3,
+  mobileBack1,
+  mobileBack2,
+  mobileBack3,
+  name,
+}) {
   return (
     <motion.div
-      className="Vulkan"
+      className="Portfolio"
       initial="initial"
       animate="in"
       exit="out"
@@ -46,7 +48,7 @@ export default function Vulkan() {
         autoPlay={true}
         interval={6500}
         showThumbs={false}
-        className="Vulkan__hero"
+        className="Portfolio__hero"
       >
         <div style={{ height: "100vh" }}>
           <img src={background1} alt="Background 1" />
@@ -59,28 +61,28 @@ export default function Vulkan() {
         </div>
       </Carousel>
 
-      <div className="Vulkan__mobileHero">
+      <div className="Portfolio__mobileHero">
         <img
-          className="Vulkan__mobileHero--img1"
+          className="Portfolio__mobileHero--img1"
           src={mobileBack1}
           alt="Background1"
         />
         <img
-          className="Vulkan__mobileHero--img2"
+          className="Portfolio__mobileHero--img2"
           src={mobileBack2}
           alt="Background2"
         />
         <img
-          className="Vulkan__mobileHero--img3"
+          className="Portfolio__mobileHero--img3"
           src={mobileBack3}
           alt="Background3"
         />
       </div>
 
-      <div className="Vulkan__lookbook">
-        <h1>Vulkan Lookbook</h1>
+      <div className="Portfolio__lookbook">
+        <h1>{name} Lookbook</h1>
         <SRLWrapper>
-          <Gallery photos={data} />
+          <Gallery photos={galleryData} />
         </SRLWrapper>
       </div>
     </motion.div>

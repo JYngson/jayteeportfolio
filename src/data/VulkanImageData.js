@@ -1,4 +1,3 @@
-//Photo imports
 import image1 from "../assets/images/Vulkan/IMG_0018.JPG";
 import image2 from "../assets/images/Vulkan/IMG_0061.JPG";
 import image3 from "../assets/images/Vulkan/IMG_0202.JPG";
@@ -21,7 +20,7 @@ import image19 from "../assets/images/SevenTeenTwentyThree/IMG_9970.JPG";
 import image20 from "../assets/images/SevenTeenTwentyThree/s.1.jpg";
 import image21 from "../assets/images/SevenTeenTwentyThree/s.3.jpg";
 
-export const data = [
+export const vulkanData = [
   {
     name: "image1",
     src: `${image1}`,
