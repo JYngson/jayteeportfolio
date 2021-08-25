@@ -32,6 +32,7 @@ export default function Portfolio({
   mobileBack1,
   mobileBack2,
   mobileBack3,
+  mobileHero,
   name,
 }) {
   return (
@@ -61,7 +62,12 @@ export default function Portfolio({
         </div>
       </Carousel>
 
-      <div className="Portfolio__mobileHero">
+      <div
+        className="Portfolio__mobileHero"
+        style={{
+          backgroundImage: `url(${mobileHero})`,
+        }}
+      >
         <img
           className="Portfolio__mobileHero--img1"
           src={mobileBack1}

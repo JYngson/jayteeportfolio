@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.scss";
-import { Background, Navbar, Porfolio, About } from "./components";
+import { Background, Navbar, Portfolio, About } from "./components";
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -12,6 +12,7 @@ import vulkanBack3 from "./assets/images/SevenTeenTwentyThree/IMG_2899.JPG";
 import mobileVulkanBack1 from "./assets/images/Vulkan/IMG_0061.JPG";
 import mobileVulkanBack2 from "./assets/images/Vulkan/IMG_9186.jpg_new_.jpg";
 import mobileVulkanBack3 from "./assets/images/SevenTeenTwentyThree/s.3.jpg";
+import mobileVulkanHero from "./assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 
 //Reminiscent Pic Imports
 import { reminiscentData } from "./data/ReminiscentImageData";
@@ -21,7 +22,7 @@ import remBack3 from "./assets/images/Reminiscent/Top 10/IMG_5873.JPG";
 import mobileRemBack1 from "./assets/images/Reminiscent/Top 10/IMG_2940.JPG";
 import mobileRemBack2 from "./assets/images/Reminiscent/IMG_6443.JPG";
 import mobileRemBack3 from "./assets/images/Reminiscent/IMG_3133.JPG";
-import Portfolio from "./components/Portfolio/Portfolio";
+import mobileRemHero from "./assets/images/Reminiscent/Top 10/IMG_2939.JPG";
 
 export default function App() {
   const [background, setBackground] = useState("Black");
@@ -48,6 +49,7 @@ export default function App() {
                 mobileBack1={mobileVulkanBack1}
                 mobileBack2={mobileVulkanBack2}
                 mobileBack3={mobileVulkanBack3}
+                mobileHero={mobileVulkanHero}
                 name="Vulkan"
               />
             </Route>
@@ -61,6 +63,7 @@ export default function App() {
                 mobileBack1={mobileRemBack1}
                 mobileBack2={mobileRemBack2}
                 mobileBack3={mobileRemBack3}
+                mobileHero={mobileRemHero}
                 name="Reminiscent"
               />
             </Route>

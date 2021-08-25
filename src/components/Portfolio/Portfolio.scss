@@ -1,7 +1,6 @@
 @import "../Partials/mixins";
 
 .Portfolio {
-  height: 200vh;
   @include mobile {
     padding-top: 20vh;
   }
@@ -17,7 +16,6 @@
     overflow: hidden;
     padding-top: 10vh;
     height: 80vh;
-    background-image: url("../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG");
     background-position: center;
     background-size: cover;
     @include desktop {

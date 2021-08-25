@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import Differentiate from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
+import Vulkan from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
+import Reminiscent from "../../assets/images/Reminiscent/IMG_5878.JPG";
 import "./Navbar.scss";
 import { slide as Menu } from "react-burger-menu";
 import icon from "../../assets/icons/sleepy.png";
@@ -44,8 +45,15 @@ export default function Navbar({ setBackground }) {
             About
           </a>
           <h3 className="Navbar__menu-item--header">---Fashion---</h3>
-          <a id="vulkan" className="Navbar__menu-item--shoot" href="/Vulkan">
+          <a id="Vulkan" className="Navbar__menu-item--shoot" href="/Vulkan">
             - Vulkan
+          </a>
+          <a
+            id="Reminiscent"
+            className="Navbar__menu-item--shoot"
+            href="/Reminiscent"
+          >
+            - Reminiscent
           </a>
           <h3 className="Navbar__menu-item--header">---Jewelry---</h3>
         </Menu>
@@ -81,7 +89,7 @@ export default function Navbar({ setBackground }) {
                   <Link
                     to="/Vulkan"
                     className="Navbar__shoot"
-                    onMouseEnter={() => onHover(`${Differentiate}`)}
+                    onMouseEnter={() => onHover(`${Vulkan}`)}
                     onMouseLeave={() => onHover("Black")}
                   >
                     01_21_VULKAN//17:23
@@ -89,7 +97,7 @@ export default function Navbar({ setBackground }) {
                   <Link
                     to="/Reminiscent"
                     className="Navbar__shoot"
-                    onMouseEnter={() => onHover(`${Differentiate}`)}
+                    onMouseEnter={() => onHover(`${Reminiscent}`)}
                     onMouseLeave={() => onHover("Black")}
                   >
                     02_21_REMINISCENT
