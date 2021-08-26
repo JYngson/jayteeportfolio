@@ -3,6 +3,8 @@ import { FiInstagram, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import Vulkan from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import Reminiscent from "../../assets/images/Reminiscent/IMG_5878.JPG";
+import Talaysay from "../../assets/images/Talaysay (May 2021)/Additional 10/Talasay.png";
+import Lulu from "../../assets/images/Lulu (July 2021)/Additional 10/Lulu.png";
 import "./Navbar.scss";
 import { slide as Menu } from "react-burger-menu";
 import icon from "../../assets/icons/sleepy.png";
@@ -56,6 +58,12 @@ export default function Navbar({ setBackground }) {
             - Reminiscent
           </a>
           <h3 className="Navbar__menu-item--header">---Jewelry---</h3>
+          <a id="Talasay" className="Navbar__menu-item--shoot" href="/Talasay">
+            - Talaysay
+          </a>
+          <a id="Lulu" className="Navbar__menu-item--shoot" href="/Lulu">
+            - Lulu
+          </a>
         </Menu>
 
         {/* Desktop menu */}
@@ -104,7 +112,24 @@ export default function Navbar({ setBackground }) {
                   </Link>
                 </div>
               ) : (
-                <h2>Jewelry</h2>
+                <div className="Navbar__shootList">
+                  <Link
+                    to="/Talaysay"
+                    className="Navbar__shoot"
+                    onMouseEnter={() => onHover(`${Talaysay}`)}
+                    onMouseLeave={() => onHover("Black")}
+                  >
+                    05_21_TALAYSAY
+                  </Link>
+                  <Link
+                    to="/Lulu"
+                    className="Navbar__shoot"
+                    onMouseEnter={() => onHover(`${Lulu}`)}
+                    onMouseLeave={() => onHover("Black")}
+                  >
+                    07_21_LULU
+                  </Link>
+                </div>
               )}
             </div>
           </div>

@@ -8,11 +8,9 @@ import { Carousel } from "react-responsive-carousel";
 
 const variants = {
   initial: {
-    transform: "scale(1.25, 1.25)",
     filter: "invert(1)",
   },
   in: {
-    transform: "scale(1, 1)",
     filter: "invert(0)",
   },
   out: {

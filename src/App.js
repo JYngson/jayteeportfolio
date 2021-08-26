@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.scss";
-import { Background, Navbar, Portfolio, About } from "./components";
+import { Background, Navbar, Portfolio, Jewelry, About } from "./components";
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -24,11 +24,25 @@ import mobileRemBack2 from "./assets/images/Reminiscent/IMG_6443.JPG";
 import mobileRemBack3 from "./assets/images/Reminiscent/IMG_3133.JPG";
 import mobileRemHero from "./assets/images/Reminiscent/Top 10/IMG_2939.JPG";
 
+//Talasay Pic Import
+import { talaysayData } from "./data/TalaysayImageData";
+import talaysay from "./assets/images/Talaysay (May 2021)/Additional 10/Talasay.png";
+import mobileTalaBack1 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5428.JPG";
+import mobileTalaBack2 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5420.JPG";
+import mobileTalaBack3 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5414.JPG";
+import mobileTalaHero from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5416.JPG";
+
+//Lulu Pic Import
+import { luluData } from "./data/LuluImageData";
+import lulu from "./assets/images/Lulu (July 2021)/Additional 10/Lulu.png";
+import mobileLuluBack1 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8430.JPG";
+import mobileLuluBack2 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7961.JPG";
+import mobileLuluBack3 from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8145.JPG";
+import mobileLuluHero from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8366.JPG";
+
 export default function App() {
   const [background, setBackground] = useState("Black");
   const [visible, setVisible] = useState("Hidden");
-  const [vulkan] = useState(vulkanData);
-  const [reminiscent] = useState(reminiscentData);
 
   return (
     <Router>
@@ -42,7 +56,7 @@ export default function App() {
 
             <Route exact path="/Vulkan">
               <Portfolio
-                galleryData={vulkan}
+                galleryData={vulkanData}
                 background1={vulkanBack1}
                 background2={vulkanBack2}
                 background3={vulkanBack3}
@@ -56,7 +70,7 @@ export default function App() {
 
             <Route exact path="/Reminiscent">
               <Portfolio
-                galleryData={reminiscent}
+                galleryData={reminiscentData}
                 background1={remBack1}
                 background2={remBack2}
                 background3={remBack3}
@@ -65,6 +79,32 @@ export default function App() {
                 mobileBack3={mobileRemBack3}
                 mobileHero={mobileRemHero}
                 name="Reminiscent"
+              />
+            </Route>
+
+            <Route exact path="/Talaysay">
+              <Jewelry
+                galleryData={talaysayData}
+                background1={talaysay}
+                mobileBack1={mobileTalaBack1}
+                mobileBack2={mobileTalaBack2}
+                mobileBack3={mobileTalaBack3}
+                mobileHero={mobileTalaHero}
+                color="yellow"
+                name="Talaysay"
+              />
+            </Route>
+
+            <Route exact path="/Lulu">
+              <Jewelry
+                galleryData={luluData}
+                background1={lulu}
+                mobileBack1={mobileLuluBack1}
+                mobileBack2={mobileLuluBack2}
+                mobileBack3={mobileLuluBack3}
+                mobileHero={mobileLuluHero}
+                color="rgba(252, 205, 124)"
+                name="Lulu"
               />
             </Route>
 

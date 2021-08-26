@@ -59,15 +59,6 @@
       text-decoration: none;
     }
   }
-  &__mobileNav {
-    display: flex;
-    width: 100%;
-    @include mobile {
-      display: flex;
-      width: 100vw;
-      height: 100vh;
-    }
-  }
   &__mainNav {
     display: flex;
     justify-content: space-evenly;
@@ -100,6 +91,9 @@
     text-decoration: none;
     color: red;
     font-weight: bold;
+    @include largeDesk {
+      font-size: 2.5rem;
+    }
   }
   &__portfolio {
     display: flex;
@@ -186,6 +180,9 @@
     justify-content: center;
     align-items: center;
     width: 30%;
+    @include largeDesk {
+      font-size: 2.8rem;
+    }
   }
   &__header {
     text-decoration: none;
@@ -197,6 +194,9 @@
     }
     @include mobile {
       font-size: 2rem;
+    }
+    @include largeDesk {
+      font-size: 5rem;
     }
   }
   &__contact {
@@ -229,6 +229,9 @@
     display: none;
   }
   @include desktop {
+    display: none;
+  }
+  @include largeDesk {
     display: none;
   }
 }
