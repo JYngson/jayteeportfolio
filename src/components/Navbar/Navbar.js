@@ -5,6 +5,7 @@ import Vulkan from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import Reminiscent from "../../assets/images/Reminiscent/IMG_5878.JPG";
 import Talaysay from "../../assets/images/Talaysay (May 2021)/Additional 10/Talasay.png";
 import Lulu from "../../assets/images/Lulu (July 2021)/Additional 10/Lulu.png";
+import Justin from "../../assets/images/Justin (March 2021)/Additional 10/Justin.png";
 import "./Navbar.scss";
 import { slide as Menu } from "react-burger-menu";
 import icon from "../../assets/icons/sleepy.png";
@@ -64,6 +65,9 @@ export default function Navbar({ setBackground }) {
           <a id="Lulu" className="Navbar__menu-item--shoot" href="/Lulu">
             - Lulu
           </a>
+          <a id="Justin" className="Navbar__menu-item--shoot" href="/Justin">
+            - Justin
+          </a>
         </Menu>
 
         {/* Desktop menu */}
@@ -113,6 +117,14 @@ export default function Navbar({ setBackground }) {
                 </div>
               ) : (
                 <div className="Navbar__shootList">
+                  <Link
+                    to="/Justin"
+                    className="Navbar__shoot"
+                    onMouseEnter={() => onHover(`${Justin}`)}
+                    onMouseLeave={() => onHover("Black")}
+                  >
+                    03_21_JUSTIN
+                  </Link>
                   <Link
                     to="/Talaysay"
                     className="Navbar__shoot"

@@ -40,6 +40,14 @@ import mobileLuluBack2 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GI
 import mobileLuluBack3 from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8145.JPG";
 import mobileLuluHero from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8366.JPG";
 
+//Justin Pic Import
+import { justinData } from "./data/JustinImageData";
+import justin from "./assets/images/Justin (March 2021)/Additional 10/Justin.png";
+import mobileJustinBack1 from "./assets/images/Justin (March 2021)/Additional 10/20210321-GIL_9675.JPG";
+import mobileJustinBack2 from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_9650.JPG";
+import mobileJustinBack3 from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_0121.JPG";
+import mobileJustinHero from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_9988.JPG";
+
 export default function App() {
   const [background, setBackground] = useState("Black");
   const [visible, setVisible] = useState("Hidden");
@@ -105,6 +113,19 @@ export default function App() {
                 mobileHero={mobileLuluHero}
                 color="rgba(252, 205, 124)"
                 name="Lulu"
+              />
+            </Route>
+
+            <Route exact path="/Justin">
+              <Jewelry
+                galleryData={justinData}
+                background1={justin}
+                mobileBack1={mobileJustinBack1}
+                mobileBack2={mobileJustinBack2}
+                mobileBack3={mobileJustinBack3}
+                mobileHero={mobileJustinHero}
+                color="rgba(95, 166, 186)"
+                name="Justin"
               />
             </Route>
 
