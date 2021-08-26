@@ -59,14 +59,14 @@ export default function Navbar({ setBackground }) {
             - Reminiscent
           </a>
           <h3 className="Navbar__menu-item--header">---Jewelry---</h3>
+          <a id="Justin" className="Navbar__menu-item--shoot" href="/Justin">
+            - Justin
+          </a>
           <a id="Talasay" className="Navbar__menu-item--shoot" href="/Talasay">
             - Talaysay
           </a>
           <a id="Lulu" className="Navbar__menu-item--shoot" href="/Lulu">
             - Lulu
-          </a>
-          <a id="Justin" className="Navbar__menu-item--shoot" href="/Justin">
-            - Justin
           </a>
         </Menu>
 
