@@ -59,7 +59,7 @@ export default function Navbar({ setBackground }) {
           <a id="Justin" className="Navbar__menuItem--shoot" href="/Justin">
             - Justin
           </a>
-          <a id="Talasay" className="Navbar__menuItem--shoot" href="/Talasay">
+          <a id="Talaysay" className="Navbar__menuItem--shoot" href="/Talaysay">
             - Talaysay
           </a>
           <a id="Lulu" className="Navbar__menuItem--shoot" href="/Lulu">
@@ -112,7 +112,7 @@ export default function Navbar({ setBackground }) {
                     02_21_REMINISCENT
                   </Link>
                   {/* <Link to="/Customs" className="Navbar__shoot">
-                    CUSTOM PIECES
+                    12_97_C_U_S_T_O_M
                   </Link> */}
                 </div>
               ) : (
