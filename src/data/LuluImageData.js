@@ -1,23 +1,23 @@
-import image1 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7840.JPG";
-import image2 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7961.JPG";
-import image3 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7971.JPG";
-import image4 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7984.JPG";
-import image5 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7989.JPG";
-import image6 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8049.JPG";
-import image7 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8179.JPG";
-import image8 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8204.JPG";
-import image9 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8238.JPG";
-import image10 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8430.JPG";
-import image11 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_7857.JPG";
-import image12 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_7871.JPG";
-import image13 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_7873.JPG";
-import image14 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_7954.JPG";
-import image15 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8041.JPG";
-import image16 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8145.JPG";
-import image17 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8165.JPG";
-import image18 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8366.JPG";
-import image19 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8448.JPG";
-import image20 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8469.JPG";
+import image1 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7840.jpg";
+import image2 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7961.jpg";
+import image3 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7971.jpg";
+import image4 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7984.jpg";
+import image5 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7989.jpg";
+import image6 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8049.jpg";
+import image7 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8179.jpg";
+import image8 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8204.jpg";
+import image9 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8238.jpg";
+import image10 from "../assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8430.jpg";
+import image11 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_7857.jpg";
+import image12 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_7871.jpg";
+import image13 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_7873.jpg";
+import image14 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_7954.jpg";
+import image15 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8041.jpg";
+import image16 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8145.jpg";
+import image17 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8165.jpg";
+import image18 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8366.jpg";
+import image19 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8448.jpg";
+import image20 from "../assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8469.jpg";
 
 export const luluData = [
   {

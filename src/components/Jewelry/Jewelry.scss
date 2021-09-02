@@ -20,20 +20,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: 1980px 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     height: 100vh;
     width: 100vw;
+    @include largeDesk {
+      background-size: cover;
+    }
     @include mobile {
       display: none;
     }
   }
-  &__heroImg {
-    height: 100%;
-    width: 100%;
-    @include mobile {
-      display: none;
-    }
-  }
+  // &__heroImg {
+  //   height: 100%;
+  //   width: 100%;
+  //   @include mobile {
+  //     display: none;
+  //   }
+  // }
   &__mobileHero {
     justify-content: center;
     position: relative;
@@ -43,6 +49,9 @@
     height: 80vh;
     background-position: center;
     background-size: cover;
+    @include largeDesk {
+      display: none;
+    }
     @include desktop {
       display: none;
     }

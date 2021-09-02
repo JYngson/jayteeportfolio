@@ -1,52 +1,59 @@
 import React, { useState } from "react";
 import "./App.scss";
-import { Background, Navbar, Portfolio, Jewelry, About } from "./components";
+import {
+  Background,
+  Navbar,
+  Portfolio,
+  Jewelry,
+  Customs,
+  About,
+} from "./components";
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Vulkan Pic Imports
 import { vulkanData } from "./data/VulkanImageData";
 import vulkanBack1 from "./assets/images/Vulkan/IMG_9486.jpg";
-import vulkanBack2 from "./assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
-import vulkanBack3 from "./assets/images/SevenTeenTwentyThree/IMG_2899.JPG";
-import mobileVulkanBack1 from "./assets/images/Vulkan/IMG_0061.JPG";
+import vulkanBack2 from "./assets/images/SevenTeenTwentyThree/IMG_9850.jpg";
+import vulkanBack3 from "./assets/images/SevenTeenTwentyThree/IMG_2899.jpg";
+import mobileVulkanBack1 from "./assets/images/Vulkan/IMG_0061.jpg";
 import mobileVulkanBack2 from "./assets/images/Vulkan/IMG_9186.jpg_new_.jpg";
 import mobileVulkanBack3 from "./assets/images/SevenTeenTwentyThree/s.3.jpg";
-import mobileVulkanHero from "./assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
+import mobileVulkanHero from "./assets/images/SevenTeenTwentyThree/IMG_9850.jpg";
 
 //Reminiscent Pic Imports
 import { reminiscentData } from "./data/ReminiscentImageData";
-import remBack1 from "./assets/images/Reminiscent/IMG_3151.JPG";
-import remBack2 from "./assets/images/Reminiscent/Top 10/IMG_5877.JPG";
-import remBack3 from "./assets/images/Reminiscent/Top 10/IMG_5873.JPG";
-import mobileRemBack1 from "./assets/images/Reminiscent/Top 10/IMG_2940.JPG";
-import mobileRemBack2 from "./assets/images/Reminiscent/IMG_6443.JPG";
-import mobileRemBack3 from "./assets/images/Reminiscent/IMG_3133.JPG";
-import mobileRemHero from "./assets/images/Reminiscent/Top 10/IMG_2939.JPG";
+import remBack1 from "./assets/images/Reminiscent/IMG_3151.jpg";
+import remBack2 from "./assets/images/Reminiscent/Top 10/IMG_5877.jpg";
+import remBack3 from "./assets/images/Reminiscent/Top 10/IMG_5873.jpg";
+import mobileRemBack1 from "./assets/images/Reminiscent/Top 10/IMG_2940.jpg";
+import mobileRemBack2 from "./assets/images/Reminiscent/IMG_6443.jpg";
+import mobileRemBack3 from "./assets/images/Reminiscent/IMG_3133.jpg";
+import mobileRemHero from "./assets/images/Reminiscent/Top 10/IMG_2939.jpg";
 
 //Talasay Pic Import
 import { talaysayData } from "./data/TalaysayImageData";
 import talaysay from "./assets/images/Talaysay (May 2021)/Additional 10/Talasay.png";
-import mobileTalaBack1 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5428.JPG";
-import mobileTalaBack2 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5420.JPG";
-import mobileTalaBack3 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5414.JPG";
-import mobileTalaHero from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5416.JPG";
+import mobileTalaBack1 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5428.jpg";
+import mobileTalaBack2 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5420.jpg";
+import mobileTalaBack3 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5414.jpg";
+import mobileTalaHero from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5416.jpg";
 
 //Lulu Pic Import
 import { luluData } from "./data/LuluImageData";
 import lulu from "./assets/images/Lulu (July 2021)/Additional 10/Lulu.png";
-import mobileLuluBack1 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8430.JPG";
-import mobileLuluBack2 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7961.JPG";
-import mobileLuluBack3 from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8145.JPG";
-import mobileLuluHero from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8366.JPG";
+import mobileLuluBack1 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8430.jpg";
+import mobileLuluBack2 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7961.jpg";
+import mobileLuluBack3 from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8145.jpg";
+import mobileLuluHero from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8366.jpg";
 
 //Justin Pic Import
 import { justinData } from "./data/JustinImageData";
 import justin from "./assets/images/Justin (March 2021)/Additional 10/Justin.png";
-import mobileJustinBack1 from "./assets/images/Justin (March 2021)/Additional 10/20210321-GIL_9675.JPG";
-import mobileJustinBack2 from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_9650.JPG";
-import mobileJustinBack3 from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_0121.JPG";
-import mobileJustinHero from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_9988.JPG";
+import mobileJustinBack1 from "./assets/images/Justin (March 2021)/Additional 10/20210321-GIL_9675.jpg";
+import mobileJustinBack2 from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_0140.jpg";
+import mobileJustinBack3 from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_0121.jpg";
+import mobileJustinHero from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_9988.jpg";
 
 export default function App() {
   const [background, setBackground] = useState("Black");
@@ -88,6 +95,9 @@ export default function App() {
                 mobileHero={mobileRemHero}
                 name="Reminiscent"
               />
+            </Route>
+            <Route exact path="/Customs">
+              <Customs />
             </Route>
 
             <Route exact path="/Talaysay">

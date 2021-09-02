@@ -18,6 +18,9 @@
     height: 80vh;
     background-position: center;
     background-size: cover;
+    @include largeDesk {
+      display: none;
+    }
     @include desktop {
       display: none;
     }

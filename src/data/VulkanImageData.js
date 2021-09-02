@@ -1,22 +1,22 @@
-import image1 from "../assets/images/Vulkan/IMG_0018.JPG";
-import image2 from "../assets/images/Vulkan/IMG_0061.JPG";
-import image3 from "../assets/images/Vulkan/IMG_0202.JPG";
-import image4 from "../assets/images/Vulkan/IMG_0221.JPG";
-import image5 from "../assets/images/Vulkan/IMG_0422.JPG";
+import image1 from "../assets/images/Vulkan/IMG_0018.jpg";
+import image2 from "../assets/images/Vulkan/IMG_0061.jpg";
+import image3 from "../assets/images/Vulkan/IMG_0202.jpg";
+import image4 from "../assets/images/Vulkan/IMG_0221.jpg";
+import image5 from "../assets/images/Vulkan/IMG_0422.jpg";
 import image6 from "../assets/images/Vulkan/IMG_9186.jpg_new_.jpg";
 import image7 from "../assets/images/Vulkan/IMG_9486.jpg";
 import image8 from "../assets/images/Vulkan/IMG_9560.jpg_.jpg";
 import image9 from "../assets/images/Vulkan/IMG_9657.jpg";
 import image10 from "../assets/images/Vulkan/LC1.jpg_.jpg_.jpg";
 import image11 from "../assets/images/Vulkan/LC2.jpg";
-import image12 from "../assets/images/SevenTeenTwentyThree/IMG_0207.JPG";
-import image13 from "../assets/images/SevenTeenTwentyThree/IMG_0389.JPG";
-import image14 from "../assets/images/SevenTeenTwentyThree/IMG_2891.JPG";
-import image15 from "../assets/images/SevenTeenTwentyThree/IMG_2894.JPG";
-import image16 from "../assets/images/SevenTeenTwentyThree/IMG_2899.JPG";
+import image12 from "../assets/images/SevenTeenTwentyThree/IMG_0207.jpg";
+import image13 from "../assets/images/SevenTeenTwentyThree/IMG_0389.jpg";
+import image14 from "../assets/images/SevenTeenTwentyThree/IMG_2891.jpg";
+import image15 from "../assets/images/SevenTeenTwentyThree/IMG_2894.jpg";
+import image16 from "../assets/images/SevenTeenTwentyThree/IMG_2899.jpg";
 import image17 from "../assets/images/SevenTeenTwentyThree/IMG_9513.jpg";
-import image18 from "../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
-import image19 from "../assets/images/SevenTeenTwentyThree/IMG_9970.JPG";
+import image18 from "../assets/images/SevenTeenTwentyThree/IMG_9850.jpg";
+import image19 from "../assets/images/SevenTeenTwentyThree/IMG_9970.jpg";
 import image20 from "../assets/images/SevenTeenTwentyThree/s.1.jpg";
 import image21 from "../assets/images/SevenTeenTwentyThree/s.3.jpg";
 
@@ -24,8 +24,8 @@ export const vulkanData = [
   {
     name: "image1",
     src: `${image1}`,
-    width: 2,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     name: "image2",
@@ -36,8 +36,8 @@ export const vulkanData = [
   {
     name: "image3",
     src: `${image3}`,
-    width: 2,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     name: "image4",
@@ -48,8 +48,8 @@ export const vulkanData = [
   {
     name: "image5",
     src: `${image5}`,
-    width: 2,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     name: "image6",
@@ -60,14 +60,14 @@ export const vulkanData = [
   {
     name: "image7",
     src: `${image7}`,
-    width: 3,
-    height: 2,
+    width: 6,
+    height: 4,
   },
   {
     name: "image8",
     src: `${image8}`,
-    width: 2,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     name: "image9",
@@ -78,8 +78,8 @@ export const vulkanData = [
   {
     name: "image10",
     src: `${image10}`,
-    width: 2,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     name: "image11",
@@ -96,8 +96,8 @@ export const vulkanData = [
   {
     name: "image13",
     src: `${image13}`,
-    width: 4,
-    height: 5,
+    width: 3,
+    height: 4,
   },
   {
     name: "image14",
@@ -132,8 +132,8 @@ export const vulkanData = [
   {
     name: "image19",
     src: `${image19}`,
-    width: 2,
-    height: 3,
+    width: 3,
+    height: 4,
   },
   {
     name: "image20",

@@ -23,26 +23,7 @@
       overflow: visible;
     }
   }
-  &__iconBox {
-    @include tablet {
-      display: none;
-    }
-    @include mobile {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  &__sideIcon {
-    display: none;
-    @include mobile {
-      pointer-events: none;
-      display: flex;
-      width: 2em;
-      height: 20vh;
-    }
-  }
-  &__menu-item {
+  &__menuItem {
     font-size: 1.1em;
     margin: 12px;
     color: white;
@@ -131,6 +112,9 @@
     cursor: pointer;
     margin: 0;
     color: red;
+    @include largeDesk {
+      font-size: 2.3rem;
+    }
     @include mobile {
       display: none;
     }
@@ -159,6 +143,9 @@
     &:hover {
       animation: color 1s ease-in;
       animation-fill-mode: forwards;
+    }
+    @include largeDesk {
+      font-size: 1.8rem;
     }
     @include mobile {
       background-color: grey;

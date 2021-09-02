@@ -30,7 +30,12 @@ export default function Jewelry({
 }) {
   return (
     <div className="Jewelry">
-      <div className="Jewelry__heroContainer">
+      <div
+        className="Jewelry__heroContainer"
+        style={{
+          backgroundImage: `url(${background1})`,
+        }}
+      >
         <motion.h1
           className="Jewelry__title"
           style={{ color: color }}
@@ -42,7 +47,7 @@ export default function Jewelry({
         >
           {name}
         </motion.h1>
-        <img className="Jewelry__heroImg" src={background1} alt="heroImg" />
+        {/* <img className="Jewelry__heroImg" src={background1} alt="heroImg" /> */}
       </div>
       <div
         className="Jewelry__mobileHero"

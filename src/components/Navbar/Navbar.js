@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import Vulkan from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
-import Reminiscent from "../../assets/images/Reminiscent/IMG_5878.JPG";
+import Vulkan from "../../assets/images/SevenTeenTwentyThree/IMG_9850.jpg";
+import Reminiscent from "../../assets/images/Reminiscent/IMG_5878.jpg";
 import Talaysay from "../../assets/images/Talaysay (May 2021)/Additional 10/Talasay.png";
 import Lulu from "../../assets/images/Lulu (July 2021)/Additional 10/Lulu.png";
 import Justin from "../../assets/images/Justin (March 2021)/Additional 10/Justin.png";
@@ -37,35 +37,32 @@ export default function Navbar({ setBackground }) {
     <div className="Navbar">
       <div className="Navbar__sidebar">
         {/* Mobile */}
-        <Menu
-          className="Navbar__mobileMenu"
-          customBurgerIcon={<img src={icon} alt="menuIcon" />}
-        >
-          <a id="home" className="Navbar__menu-item" href="/">
+        <Menu customBurgerIcon={<img src={icon} alt="menuIcon" />}>
+          <a id="home" className="Navbar__menuItem" href="/">
             Home
           </a>
-          <a id="about" className="Navbar__menu-item" href="/about">
+          <a id="about" className="Navbar__menuItem" href="/about">
             About
           </a>
-          <h3 className="Navbar__menu-item--header">---Fashion---</h3>
-          <a id="Vulkan" className="Navbar__menu-item--shoot" href="/Vulkan">
+          <h3 className="Navbar__menuItem--header">---Fashion---</h3>
+          <a id="Vulkan" className="Navbar__menuItem--shoot" href="/Vulkan">
             - Vulkan
           </a>
           <a
             id="Reminiscent"
-            className="Navbar__menu-item--shoot"
+            className="Navbar__menuItem--shoot"
             href="/Reminiscent"
           >
             - Reminiscent
           </a>
-          <h3 className="Navbar__menu-item--header">---Jewelry---</h3>
-          <a id="Justin" className="Navbar__menu-item--shoot" href="/Justin">
+          <h3 className="Navbar__menuItem--header">---Jewelry---</h3>
+          <a id="Justin" className="Navbar__menuItem--shoot" href="/Justin">
             - Justin
           </a>
-          <a id="Talasay" className="Navbar__menu-item--shoot" href="/Talasay">
+          <a id="Talasay" className="Navbar__menuItem--shoot" href="/Talasay">
             - Talaysay
           </a>
-          <a id="Lulu" className="Navbar__menu-item--shoot" href="/Lulu">
+          <a id="Lulu" className="Navbar__menuItem--shoot" href="/Lulu">
             - Lulu
           </a>
         </Menu>
@@ -114,6 +111,9 @@ export default function Navbar({ setBackground }) {
                   >
                     02_21_REMINISCENT
                   </Link>
+                  {/* <Link to="/Customs" className="Navbar__shoot">
+                    CUSTOM PIECES
+                  </Link> */}
                 </div>
               ) : (
                 <div className="Navbar__shootList">
