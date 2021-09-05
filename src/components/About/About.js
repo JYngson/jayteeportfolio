@@ -29,30 +29,33 @@ export default function About() {
       variants={variants}
     >
       <div className="About__container">
-        <p className="About__quote">
-          “There are so many avenues in my life that I’m exploring - fashion,
-          street dance… even my relationships with people. My art is merely a
-          reflection of those experiences.” -Sleepy
-        </p>
         <p className="About__bio">
-          Pressured by the community around him to follow traditional
-          professions of engineering and business, Sleepy’s identity as a
-          fashion designer was birthed from a defiance of cultural norms and
-          expectations. He describes his style as a{" "}
+          Influenced by the circulating market of fashion, Sleepy’s philosophy
+          as a designer centers around the{" "}
+          <span className="About__bio--life">
+            extension of life and revival
+          </span>{" "}
+          of vintage pieces. Combating the destructive nature of fast fashion,
+          Sleepy puts careful diligence on the ethical sourcing of his garments.
+          <br />
+          <br />
+          Sleepy describes his styling vision as a{" "}
           <span className="About__bio--juxt">“juxtaposition”</span> - an
-          exploration on contrasting properties, often between modern designer
+          exploration of contrasting properties, often between modern designer
           fashion and classic pieces, bound together by select vintage jewelry.
-          Sleepy’s pieces also explore opposing themes like casual wear and
-          formal wear, together creating a versatile and unique collection of
-          pieces. As of recent, his interests have been focused on the idea of{" "}
-          <span className="About__bio--creation">
-            “creation through destruction”
-          </span>
-          , achieved through the medium of Boro Stitching. Never fully knowing
-          what he’ll come up with, Sleepy treads the boundary between{" "}
-          <span className="About__bio--chaos">chaos and order</span>, trusting
-          that through the chaos of the unknown, he’ll come out with unique
-          designs that push the boundaries of fashion.
+          Sleepy’s pieces also explore opposing themes like street style and
+          avant-garde, with the aim of striking a balance between two distinct
+          markets.
+          <br />
+          <br />
+          As of recently, Sleepy’s interests have been concentrated on the
+          medium of Boro Stitching. His present work has been focused on
+          creating{" "}
+          <span className="About__bio--glitch">“glitches in perfection”</span> -
+          taking a finished product and infusing his personal touch onto it.
+          Sleepy’s newest designs hope to further enhance what the original
+          manufacturers deemed “standard”, breathing in an unconventional beauty
+          to already finished products.
         </p>
       </div>
     </motion.div>

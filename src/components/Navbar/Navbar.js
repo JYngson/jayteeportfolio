@@ -152,7 +152,7 @@ export default function Navbar({ setBackground }) {
 
       <div className="Navbar__title">
         <Link to="/" className="Navbar__header">
-          Sleepy
+          SLEEPY
         </Link>
       </div>
 

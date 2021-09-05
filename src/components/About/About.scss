@@ -21,23 +21,28 @@
       padding-top: 20vh;
     }
   }
-  &__quote {
-    color: white;
-    font-style: italic;
-    font-size: 1.2rem;
-  }
   &__bio {
     line-height: 1.2em;
     width: 100%;
     color: white;
+    @include tablet {
+      font-size: 0.9rem;
+    }
+    @include desktop {
+      font-size: 1.2rem;
+    }
+    @include largeDesk {
+      font-size: 2.2rem;
+    }
+
+    &--life {
+      color: rgb(255, 230, 0);
+    }
     &--juxt {
-      color: yellow;
+      color: rgb(255, 119, 0);
     }
-    &--creation {
-      color: red;
-    }
-    &--chaos {
-      color: purple;
+    &--glitch {
+      color: rgb(24, 202, 230);
     }
   }
 }
