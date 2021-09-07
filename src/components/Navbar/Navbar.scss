@@ -139,7 +139,9 @@
     margin: 5% 0;
     cursor: pointer;
     color: yellow;
+    background-color: black;
     height: 1em;
+    transform: skewX(-15deg);
     &:hover {
       animation: color 1s ease-in;
       animation-fill-mode: forwards;
