@@ -105,7 +105,7 @@ export default function Navbar({ setBackground }) {
                     onMouseEnter={() => onHover(`${Differentiate}`)}
                     onMouseLeave={() => onHover("Black")}
                   >
-                    01_21_DIFFERENTIATE//17:23
+                    01_21_DIFFERENTIATE
                   </Link>
                   <Link
                     to="/Reminiscent"
