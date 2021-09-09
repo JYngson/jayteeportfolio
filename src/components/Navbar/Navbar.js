@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import Vulkan from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
+import Differentiate from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 import Reminiscent from "../../assets/images/Reminiscent/IMG_5878.JPG";
 import Talaysay from "../../assets/images/Talaysay (May 2021)/Additional 10/Talasay.png";
 import Lulu from "../../assets/images/Lulu (July 2021)/Additional 10/Lulu.png";
@@ -45,8 +45,12 @@ export default function Navbar({ setBackground }) {
             About
           </a>
           <h3 className="Navbar__menuItem--header">---Fashion---</h3>
-          <a id="Vulkan" className="Navbar__menuItem--shoot" href="/Vulkan">
-            - Vulkan
+          <a
+            id="Differentiate"
+            className="Navbar__menuItem--shoot"
+            href="/Differentiate"
+          >
+            - Differentiate
           </a>
           <a
             id="Reminiscent"
@@ -96,12 +100,12 @@ export default function Navbar({ setBackground }) {
               {sublist ? (
                 <div className="Navbar__shootList">
                   <Link
-                    to="/Vulkan"
+                    to="/Differentiate"
                     className="Navbar__shoot"
-                    onMouseEnter={() => onHover(`${Vulkan}`)}
+                    onMouseEnter={() => onHover(`${Differentiate}`)}
                     onMouseLeave={() => onHover("Black")}
                   >
-                    01_21_VULKAN//17:23
+                    01_21_DIFFERENTIATE//17:23
                   </Link>
                   <Link
                     to="/Reminiscent"

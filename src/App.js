@@ -12,14 +12,14 @@ import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Vulkan Pic Imports
-import { vulkanData } from "./data/VulkanImageData";
-import vulkanBack1 from "./assets/images/Vulkan/IMG_9486.jpg";
-import vulkanBack2 from "./assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
-import vulkanBack3 from "./assets/images/SevenTeenTwentyThree/IMG_2899.JPG";
-import mobileVulkanBack1 from "./assets/images/Vulkan/IMG_0061.JPG";
-import mobileVulkanBack2 from "./assets/images/Vulkan/IMG_9186.jpg_new_.jpg";
-import mobileVulkanBack3 from "./assets/images/SevenTeenTwentyThree/s.3.jpg";
-import mobileVulkanHero from "./assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
+import { difData } from "./data/DifImageData";
+import difBack1 from "./assets/images/Vulkan/IMG_9486.jpg";
+import difBack2 from "./assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
+import difBack3 from "./assets/images/SevenTeenTwentyThree/IMG_2899.JPG";
+import mobileDifBack1 from "./assets/images/Vulkan/IMG_0061.JPG";
+import mobileDifBack2 from "./assets/images/Vulkan/IMG_9186.jpg_new_.jpg";
+import mobileDifBack3 from "./assets/images/SevenTeenTwentyThree/s.3.jpg";
+import mobileDifHero from "./assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
 
 //Reminiscent Pic Imports
 import { reminiscentData } from "./data/ReminiscentImageData";
@@ -69,17 +69,17 @@ export default function App() {
               <Background background={background} visible={visible} />
             </Route>
 
-            <Route exact path="/Vulkan">
+            <Route exact path="/Differentiate">
               <Portfolio
-                galleryData={vulkanData}
-                background1={vulkanBack1}
-                background2={vulkanBack2}
-                background3={vulkanBack3}
-                mobileBack1={mobileVulkanBack1}
-                mobileBack2={mobileVulkanBack2}
-                mobileBack3={mobileVulkanBack3}
-                mobileHero={mobileVulkanHero}
-                name="Vulkan"
+                galleryData={difData}
+                background1={difBack1}
+                background2={difBack2}
+                background3={difBack3}
+                mobileBack1={mobileDifBack1}
+                mobileBack2={mobileDifBack2}
+                mobileBack3={mobileDifBack3}
+                mobileHero={mobileDifHero}
+                name="Differentiate"
               />
             </Route>
 

@@ -20,7 +20,7 @@ import image19 from "../assets/images/SevenTeenTwentyThree/IMG_9970.JPG";
 import image20 from "../assets/images/SevenTeenTwentyThree/s.1.jpg";
 import image21 from "../assets/images/SevenTeenTwentyThree/s.3.jpg";
 
-export const vulkanData = [
+export const difData = [
   {
     name: "image1",
     src: `${image1}`,
