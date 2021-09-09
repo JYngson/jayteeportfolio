@@ -1,24 +1,24 @@
-import image1 from "../assets/images/Reminiscent/Top 10/IMG_6442.jpg";
-import image2 from "../assets/images/Reminiscent/Top 10/IMG_2938.jpg";
-import image3 from "../assets/images/Reminiscent/Top 10/IMG_2939.jpg";
-import image4 from "../assets/images/Reminiscent/Top 10/IMG_2940.jpg";
-import image5 from "../assets/images/Reminiscent/Top 10/IMG_2942.jpg";
-import image6 from "../assets/images/Reminiscent/Top 10/IMG_2943.jpg";
-import image7 from "../assets/images/Reminiscent/Top 10/IMG_5847.jpg";
-import image8 from "../assets/images/Reminiscent/Top 10/IMG_5851.jpg";
-import image9 from "../assets/images/Reminiscent/Top 10/IMG_5873.jpg";
-import image10 from "../assets/images/Reminiscent/Top 10/IMG_5877.jpg";
-import image11 from "../assets/images/Reminiscent/IMG_6445.jpg";
-import image12 from "../assets/images/Reminiscent/IMG_6444.jpg";
-import image13 from "../assets/images/Reminiscent/IMG_3132.jpg";
-import image14 from "../assets/images/Reminiscent/IMG_3133.jpg";
-import image15 from "../assets/images/Reminiscent/IMG_3150.jpg";
-import image16 from "../assets/images/Reminiscent/IMG_3151.jpg";
-import image17 from "../assets/images/Reminiscent/IMG_3153.jpg";
-import image18 from "../assets/images/Reminiscent/IMG_5861.jpg";
-import image19 from "../assets/images/Reminiscent/IMG_5869.jpg";
-import image20 from "../assets/images/Reminiscent/IMG_5878.jpg";
-import image21 from "../assets/images/Reminiscent/IMG_6443.jpg";
+import image1 from "../assets/images/Reminiscent/Top 10/IMG_6442.JPG";
+import image2 from "../assets/images/Reminiscent/Top 10/IMG_2938.JPG";
+import image3 from "../assets/images/Reminiscent/Top 10/IMG_2939.JPG";
+import image4 from "../assets/images/Reminiscent/Top 10/IMG_2940.JPG";
+import image5 from "../assets/images/Reminiscent/Top 10/IMG_2942.JPG";
+import image6 from "../assets/images/Reminiscent/Top 10/IMG_2943.JPG";
+import image7 from "../assets/images/Reminiscent/Top 10/IMG_5847.JPG";
+import image8 from "../assets/images/Reminiscent/Top 10/IMG_5851.JPG";
+import image9 from "../assets/images/Reminiscent/Top 10/IMG_5873.JPG";
+import image10 from "../assets/images/Reminiscent/Top 10/IMG_5877.JPG";
+import image11 from "../assets/images/Reminiscent/IMG_6445.JPG";
+import image12 from "../assets/images/Reminiscent/IMG_6444.JPG";
+import image13 from "../assets/images/Reminiscent/IMG_3132.JPG";
+import image14 from "../assets/images/Reminiscent/IMG_3133.JPG";
+import image15 from "../assets/images/Reminiscent/IMG_3150.JPG";
+import image16 from "../assets/images/Reminiscent/IMG_3151.JPG";
+import image17 from "../assets/images/Reminiscent/IMG_3153.JPG";
+import image18 from "../assets/images/Reminiscent/IMG_5861.JPG";
+import image19 from "../assets/images/Reminiscent/IMG_5869.JPG";
+import image20 from "../assets/images/Reminiscent/IMG_5878.JPG";
+import image21 from "../assets/images/Reminiscent/IMG_6443.JPG";
 
 export const reminiscentData = [
   {

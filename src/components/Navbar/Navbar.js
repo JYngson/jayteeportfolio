@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import Vulkan from "../../assets/images/SevenTeenTwentyThree/IMG_9850.jpg";
-import Reminiscent from "../../assets/images/Reminiscent/IMG_5878.jpg";
+import Vulkan from "../../assets/images/SevenTeenTwentyThree/IMG_9850.JPG";
+import Reminiscent from "../../assets/images/Reminiscent/IMG_5878.JPG";
 import Talaysay from "../../assets/images/Talaysay (May 2021)/Additional 10/Talasay.png";
 import Lulu from "../../assets/images/Lulu (July 2021)/Additional 10/Lulu.png";
 import Justin from "../../assets/images/Justin (March 2021)/Additional 10/Justin.png";
