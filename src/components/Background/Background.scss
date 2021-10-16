@@ -13,6 +13,9 @@
 .Background {
   height: 100vh;
   background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: all 0.5s linear;
 
   &__image {
@@ -22,7 +25,3 @@
     margin-left: 35vw;
   }
 }
-
-// .Navbar__shoot:hover ~ .Background {
-//   animation: fadeIn 2s;
-// }

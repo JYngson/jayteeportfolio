@@ -4,6 +4,10 @@
   @include mobile {
     padding-top: 20vh;
   }
+  &__carousel {
+    position: absolute;
+    z-index: 0.5;
+  }
   &__hero {
     @include mobile {
       display: none;

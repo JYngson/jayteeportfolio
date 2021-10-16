@@ -33,7 +33,7 @@ import mobileRemHero from "./assets/images/Reminiscent/Top 10/IMG_2939.JPG";
 
 //Talasay Pic Import
 import { talaysayData } from "./data/TalaysayImageData";
-import talaysay from "./assets/images/Talaysay (May 2021)/Additional 10/Talasay.png";
+import talaysay from "./assets/images/Talaysay (May 2021)/Additional 10/Talaysay.jpg";
 import mobileTalaBack1 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5428.JPG";
 import mobileTalaBack2 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5420.JPG";
 import mobileTalaBack3 from "./assets/images/Talaysay (May 2021)/Additional 10/IMG_5414.JPG";
@@ -41,7 +41,7 @@ import mobileTalaHero from "./assets/images/Talaysay (May 2021)/Additional 10/IM
 
 //Lulu Pic Import
 import { luluData } from "./data/LuluImageData";
-import lulu from "./assets/images/Lulu (July 2021)/Additional 10/Lulu.png";
+import lulu from "./assets/images/Lulu (July 2021)/Additional 10/Lulu.jpg";
 import mobileLuluBack1 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GIL_8430.JPG";
 import mobileLuluBack2 from "./assets/images/Lulu (July 2021)/Top 10/20210713-GIL_7961.JPG";
 import mobileLuluBack3 from "./assets/images/Lulu (July 2021)/Additional 10/20210713-GIL_8145.JPG";
@@ -49,11 +49,18 @@ import mobileLuluHero from "./assets/images/Lulu (July 2021)/Additional 10/20210
 
 //Justin Pic Import
 import { justinData } from "./data/JustinImageData";
-import justin from "./assets/images/Justin (March 2021)/Additional 10/Justin.png";
+import justin from "./assets/images/Justin (March 2021)/Additional 10/Justin.jpg";
 import mobileJustinBack1 from "./assets/images/Justin (March 2021)/Additional 10/20210321-GIL_9675.JPG";
 import mobileJustinBack2 from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_0140.JPG";
 import mobileJustinBack3 from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_0121.JPG";
 import mobileJustinHero from "./assets/images/Justin (March 2021)/Top 10/20210321-GIL_9988.JPG";
+
+import { amaraData } from "./data/AmaraImageData";
+import amara from "./assets/images/Amara (July 2021)/Additional 10/Amara.jpg";
+import mobileAmaraBack1 from "./assets/images/Amara (July 2021)/Top 10/100-20210716-KingdomxAmara.jpg";
+import mobileAmaraBack2 from "./assets/images/Amara (July 2021)/Top 10/123-20210716-KingdomxAmara.jpg";
+import mobileAmaraBack3 from "./assets/images/Amara (July 2021)/Top 10/115-20210716-KingdomxAmara.jpg";
+import mobileAmaraHero from "./assets/images/Amara (July 2021)/Top 10/79-20210716-KingdomxAmara.jpg";
 
 export default function App() {
   const [background, setBackground] = useState("Black");
@@ -108,7 +115,6 @@ export default function App() {
                 mobileBack2={mobileTalaBack2}
                 mobileBack3={mobileTalaBack3}
                 mobileHero={mobileTalaHero}
-                color="yellow"
                 name="Talaysay"
               />
             </Route>
@@ -121,7 +127,6 @@ export default function App() {
                 mobileBack2={mobileLuluBack2}
                 mobileBack3={mobileLuluBack3}
                 mobileHero={mobileLuluHero}
-                color="rgba(252, 205, 124)"
                 name="Lulu"
               />
             </Route>
@@ -134,8 +139,19 @@ export default function App() {
                 mobileBack2={mobileJustinBack2}
                 mobileBack3={mobileJustinBack3}
                 mobileHero={mobileJustinHero}
-                color="rgba(95, 166, 186)"
                 name="Justin"
+              />
+            </Route>
+
+            <Route exact path="/Amara">
+              <Jewelry
+                galleryData={amaraData}
+                background1={amara}
+                mobileBack1={mobileAmaraBack1}
+                mobileBack2={mobileAmaraBack2}
+                mobileBack3={mobileAmaraBack3}
+                mobileHero={mobileAmaraHero}
+                name="Amara"
               />
             </Route>
 

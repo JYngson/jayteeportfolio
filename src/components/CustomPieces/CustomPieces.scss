@@ -1,0 +1,25 @@
+.CustomPieces {
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  min-height: 100vh;
+  background-color: black;
+  &__gallery {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+  &__galleryImageDiv {
+    width: 31%;
+    height: 45%;
+  }
+  &__galleryImage {
+    width: 100%;
+    height: 100%;
+  }
+  &__modal {
+  }
+}
