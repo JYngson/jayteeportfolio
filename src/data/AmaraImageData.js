@@ -58,7 +58,7 @@ export const amaraData = [
   {
     name: "image7",
     src: `${image7}`,
-    width: 5,
+    width: 4,
     height: 4,
   },
   {
