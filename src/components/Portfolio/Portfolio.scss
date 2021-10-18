@@ -15,11 +15,11 @@
   }
   &__mobileHero {
     justify-content: center;
+    align-items: center;
     position: relative;
     display: flex;
     overflow: hidden;
-    padding-top: 10vh;
-    height: 80vh;
+    height: 60vh;
     background-position: center;
     background-size: cover;
     @include largeDesk {
