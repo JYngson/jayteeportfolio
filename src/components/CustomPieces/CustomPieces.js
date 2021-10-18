@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CustomPieces.scss";
 import { customGallery } from "../../data/CustomImageData";
 import Modal from "react-modal";
-import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 
 export default function CustomPieces() {
   const [modalOpen, setModalOpen] = useState(false);
