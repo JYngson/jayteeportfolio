@@ -6,6 +6,7 @@
   position: sticky;
   top: 0%;
   z-index: 1;
+  animation: fadeIn 0.5s ease-in;
 }
 
 .Navbar {
@@ -26,6 +27,12 @@
       height: 100vh;
       flex-direction: column;
       overflow: visible;
+    }
+    &--active {
+      width: 35%;
+      visibility: hidden;
+      background-color: none;
+      z-index: 0;
     }
   }
   &__menuItem {
@@ -56,9 +63,6 @@
     padding-top: 20vh;
     background: rgba(0, 0, 0, 0.6);
     animation: fadeIn 0.5s ease-in;
-    &--active {
-      display: none;
-    }
     @include mobile {
       display: none;
     }
@@ -99,16 +103,11 @@
     padding-top: 20vh;
     background: rgba(0, 0, 0, 0.6);
     animation: fadeIn 0.5s ease-in;
-    border-radius: 0px 20px 20px 0px;
     @include mobile {
       display: flex;
       justify-content: center;
       height: 100%;
       width: 65%;
-    }
-    &--active {
-      display: none;
-      background-color: none;
     }
   }
   &__portfolioShoots {
@@ -195,6 +194,10 @@
     align-items: center;
     width: 30%;
     font-family: "Shadows Into Light", "serif";
+    @include mobile {
+      align-items: flex-start;
+      margin-top: 36px;
+    }
     @include largeDesk {
       font-size: 2.8rem;
     }

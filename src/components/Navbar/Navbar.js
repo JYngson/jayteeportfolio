@@ -48,7 +48,7 @@ export default function Navbar({ setBackground }) {
   return (
     <div className="Wrap">
       <div className="Navbar">
-        <div className="Navbar__sidebar">
+        <div className={navbar ? "Navbar__sidebar" : "Navbar__sidebar--active"}>
           {/* Mobile */}
           <Menu customBurgerIcon={<img src={icon} alt="menuIcon" />}>
             <a id="home" className="Navbar__menuItem" href="/">
@@ -92,9 +92,7 @@ export default function Navbar({ setBackground }) {
           </Menu>
 
           {/* Desktop menu */}
-          <div
-            className={navbar ? "Navbar__mainNav" : `Navbar__mainNav--active`}
-          >
+          <div className="Navbar__mainNav">
             <div className="Navbar__portfolioLink">
               <h2 className="Navbar__links" onClick={portfolioHandle}>
                 Portfolio
@@ -109,18 +107,8 @@ export default function Navbar({ setBackground }) {
           </div>
 
           {portfolio ? (
-            <div
-              className={
-                navbar ? "Navbar__portfolio" : "Navbar__portfolio--active"
-              }
-            >
-              <div
-                className={
-                  navbar
-                    ? "Navbar__portfolioShoots"
-                    : "Navbar__portfolioShoots--active"
-                }
-              >
+            <div className="Navbar__portfolio">
+              <div className="Navbar__portfolioShoots">
                 <div className="Navbar__shootSublist">
                   <h3
                     className="Navbar__shootSubheader"
